@@ -1,0 +1,17 @@
+.Background-Wrapper {
+  padding: 15px;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url('../JTI WEBSITE Content/backgroundImg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.Social-Wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

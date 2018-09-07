@@ -1,0 +1,16 @@
+.Social-Button {
+  margin: 0 10px;
+  background-image: none;
+  cursor: pointer;
+  height: 20px;
+}
+
+.Social-Button:hover {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  outline: 1px solid black;
+  outline-offset: 8px;
+}

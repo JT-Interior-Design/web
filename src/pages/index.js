@@ -1,4 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
-export default () => <Link to="/">Hello world!</Link>;
+import './index.css';
+
+export default () => (
+  <div className="Container">
+    <div className="Nav-Container" />
+    <div className="Carousel-Container">this will be the nav carousel</div>
+  </div>
+);

@@ -1,0 +1,25 @@
+.Container {
+  display: flex;
+  height: 90%;
+  width: 95%;
+  margin: 18px auto;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Nav-Container {
+  width: 50%;
+  background: white;
+  opacity: 0.7;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url('../JTI WEBSITE Content/JTI Logo/FinalLogoFiles 3/navlogo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.Carousel-Container {
+  width: 50%;
+}

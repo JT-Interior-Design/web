@@ -1,16 +1,22 @@
 import React from 'react';
 
 import SocialButton from '../shared/SocialButton';
-import backgroundImg from '../JTI WEBSITE Content/backgroundImg.jpg';
+import './index.css';
 
 export default ({ children }) => (
-  <div style={{ padding: 15, height: '100vh', backgroundImage: `url(${backgroundImg})` }}>
-    <header>
-      <SocialButton type="Google" />
-      <SocialButton type="FaceBook" />
-      <SocialButton type="Instagram" />
-      <SocialButton type="Twitter" />
-      <SocialButton type="Pinterest" />
+  <div className="Background-Wrapper">
+    <header className="Social-Wrapper">
+      {/* <SocialButton type="Email" to="https://www.google.com/" /> */}
+      <SocialButton type="FaceBook" to="https://www.facebook.com/pg/stagstudiodesign/" />
+      <SocialButton
+        type="Instagram"
+        to="https://www.instagram.com/jasontaylorinteriors/"
+      />
+      <SocialButton
+        type="Twitter"
+        to="https://twitter.com/search?f=tweets&q=DesignsStag"
+      />
+      <SocialButton type="Pinterest" to="https://www.pinterest.com/stagstudiodesigns/" />
     </header>
     <header />
     {children()}
@@ -19,12 +25,11 @@ export default ({ children }) => (
 );
 
 /*
+TODO:
 Header social links
-
 twitter ✅
 email ✅
 facebook ✅
 instagram ✅
-pinterest 
-
+pinterest ✅
 */

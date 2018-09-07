@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
 
-import { Google, FaceBook, Instagram, Twitter, Pinterest } from './icons';
+import { Email, FaceBook, Instagram, Twitter, Pinterest } from './icons';
+
+import './socialButton.css';
+
 const selector = type => {
   switch (type) {
-    case 'Google':
-      return <Google />;
+    case 'Email':
+      return <Email />;
     case 'FaceBook':
       return <FaceBook />;
     case 'Instagram':
@@ -19,7 +23,11 @@ const selector = type => {
   }
 };
 
-const SocialButton = ({ type }) => <div>{selector(type)}</div>;
+const SocialButton = ({ type, to }) => (
+  <a className="Social-Button" href={`${to}`}>
+    {selector(type)}
+  </a>
+);
 
 SocialButton.propTypes = {
   type: PropTypes.string.isRequired,

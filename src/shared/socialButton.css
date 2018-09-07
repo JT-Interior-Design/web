@@ -11,6 +11,6 @@
   -o-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  outline: 1px solid black;
-  outline-offset: 8px;
+  outline: 1px solid #939393;
+  outline-offset: 6px;
 }

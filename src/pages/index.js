@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import SvgButton from '../shared/SvgButton';
+import NavLink from '../shared/NavLink';
 
 import './index.css';
 
@@ -18,16 +19,16 @@ export default () => (
         <div className="Menu-Header">Navigation</div>
         <ul className="Menu-Link-Wrapper">
           <li>
-            <Link>Projects</Link>
+            <NavLink type="Projects" to="/projects" />
           </li>
           <li>
-            <Link>Blog</Link>
+            <NavLink type="Blog" to="/projects" />
           </li>
           <li>
-            <Link>About</Link>
+            <NavLink type="About" to="/projects" />
           </li>
           <li>
-            <Link>Contact</Link>
+            <NavLink type="Contact" to="/projects" />
           </li>
         </ul>
       </div>

@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 
 import { Email, FaceBook, Instagram, Twitter, Pinterest, Logo } from './icons';
 
-import './SvgButton.css';
+import './svg_button.css';
 
 const selector = type => {
   switch (type) {
@@ -33,6 +33,8 @@ const SocialButton = ({ type, to, className }) => (
 
 SocialButton.propTypes = {
   type: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 export default SocialButton;

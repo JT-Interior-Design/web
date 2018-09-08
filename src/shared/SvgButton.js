@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-import { Email, FaceBook, Instagram, Twitter, Pinterest } from './icons';
+import { Email, FaceBook, Instagram, Twitter, Pinterest, Logo } from './icons';
 
-import './socialButton.css';
+import './SvgButton.css';
 
 const selector = type => {
   switch (type) {
@@ -18,13 +18,15 @@ const selector = type => {
       return <Twitter />;
     case 'Pinterest':
       return <Pinterest />;
+    case 'Logo':
+      return <Logo />;
     default:
       return null;
   }
 };
 
-const SocialButton = ({ type, to }) => (
-  <a className="Social-Button" href={`${to}`}>
+const SocialButton = ({ type, to, className }) => (
+  <a className={`${className}`} href={`${to}`}>
     {selector(type)}
   </a>
 );

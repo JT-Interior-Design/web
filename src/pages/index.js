@@ -14,21 +14,21 @@ export default () => (
         <SvgButton className="Logo" type="Logo" to="/" />
         <span>TAYLOR</span>
       </div>
-      <p>classic design, rooted in tradition, wistfully adorned.</p>{' '}
+      <p>classic design, rooted in tradition, wistfully adorned.</p>
       <div className="Nav-Menu">
         <div className="Menu-Header">Navigation</div>
         <ul className="Menu-Link-Wrapper">
           <li>
-            <NavLink type="Projects" to="/projects" />
+            <NavLink className="NavLink" type="Projects" to="/projects" />
           </li>
           <li>
-            <NavLink type="Blog" to="/projects" />
+            <NavLink className="NavLink" type="Blog" to="/projects" />
           </li>
           <li>
-            <NavLink type="About" to="/projects" />
+            <NavLink className="NavLink" type="About" to="/projects" />
           </li>
           <li>
-            <NavLink type="Contact" to="/projects" />
+            <NavLink className="NavLink" type="Contact" to="/projects" />
           </li>
         </ul>
       </div>

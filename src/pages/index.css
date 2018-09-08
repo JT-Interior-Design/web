@@ -36,7 +36,7 @@ p {
   font-size: 0.7em;
   font-style: italic;
   text-align: center;
-  margin-top: -3em;
+  /* margin-top: -3em; */
   margin-bottom: 0;
   letter-spacing: 2px;
   color: #b5c780;
@@ -51,7 +51,8 @@ p {
   width: 70%;
   height: 50%;
   display: flex;
-  margin-top: 100px;
+  align-items: baseline;
+  margin-top: 7em;
 }
 
 .Menu-Header {
@@ -72,4 +73,6 @@ p {
 
 .Menu-Link-Wrapper li a {
   background-image: none;
+  color: #3f3f3f;
+  opacity: 0.5;
 }

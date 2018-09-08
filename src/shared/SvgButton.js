@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 
 import { Email, FaceBook, Instagram, Twitter, Pinterest, Logo } from './icons';
 
@@ -25,16 +24,16 @@ const selector = type => {
   }
 };
 
-const SocialButton = ({ type, to, className }) => (
+const SvgButton = ({ type, to, className }) => (
   <a className={`${className}`} href={`${to}`}>
     {selector(type)}
   </a>
 );
 
-SocialButton.propTypes = {
+SvgButton.propTypes = {
   type: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
 };
 
-export default SocialButton;
+export default SvgButton;

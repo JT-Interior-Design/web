@@ -1,0 +1,49 @@
+.Carousel__img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Carousel {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.Carousel__img--animate {
+    position: absolute;
+    top: 0;
+}
+
+.Carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 1rem;
+  font-size: inherit;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .3);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .2s;
+}
+
+.Carousel__button:hover {
+  background-color: #fff;
+}
+
+.Carousel__button:active,
+.Carousel__button:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.Carousel__button--left {
+  left: 3rem;
+}
+
+.Carousel__button--right {
+  right: 3rem;
+}

@@ -1,4 +1,8 @@
 import React from 'react';
+import Link from 'gatsby-link';
+import img1 from '../JTI WEBSITE Content/Visual Design/20160414_164352.jpg';
+import img2 from '../JTI WEBSITE Content/Visual Design/20160505_161529.jpg';
+import img3 from '../JTI WEBSITE Content/Visual Design/20170705_090251.jpg';
 
 import SvgButton from '../shared/SvgButton';
 import NavLink from '../shared/NavLink';

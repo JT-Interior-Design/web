@@ -1,0 +1,23 @@
+.Social-Button {
+  margin: 0 10px;
+  background-image: none;
+  cursor: pointer;
+  height: 20px;
+  transition: all ease 0.2s;
+}
+
+.Social-Button:hover {
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.Logo {
+  background-image: none;
+  width: 20%;
+  margin-top: -1.2em;
+  margin-left: -1em;
+  margin-right: -1em;
+}

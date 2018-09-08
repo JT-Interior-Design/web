@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Carousel.css';
-import { TweenMax, Power3, SlowMo } from 'gsap';
+import { TweenMax, Power3, SlowMo, Sine } from 'gsap';
 
 class Carousel extends React.Component {
   state = {
@@ -28,11 +28,11 @@ class Carousel extends React.Component {
         // });
         TweenMax.fromTo(
           this.incomingImgRef,
-          1.5,
-          { xPercent: 100 },
+          0.8,
+          { yPercent: 100 },
           {
-            xPercent: 0,
-            ease: SlowMo.ease.config(0.1, 0.75, false),
+            yPercent: 0,
+            ease: Sine.easeInOut,
             onComplete: () =>
               this.setState({
                 currentImage: incoming,
@@ -64,11 +64,11 @@ class Carousel extends React.Component {
         // });
         TweenMax.fromTo(
           this.incomingImgRef,
-          1.5,
-          { xPercent: -100 },
+          0.8,
+          { yPercent: -100 },
           {
-            xPercent: 0,
-            ease: SlowMo.ease.config(0.1, 0.75, false),
+            yPercent: 0,
+            ease: Sine.easeInOut,
             onComplete: () =>
               this.setState({
                 currentImage: incoming,

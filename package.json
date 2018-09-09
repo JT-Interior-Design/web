@@ -12,6 +12,7 @@
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-typography": "^1.7.19",
     "gsap": "^2.0.2",
+    "lodash": "^4.17.10",
     "typography-theme-fairy-gates": "^0.15.11"
   }
 }

@@ -7,7 +7,7 @@
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 
-.Nav-Container {
+.Nav_Container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,14 +39,14 @@ p {
   text-align: center;
   margin-bottom: 0;
   letter-spacing: 2px;
-  color: #b5c780;
+  color: #9eca50;
 }
 
-.Carousel-Container {
+.Carousel_Container {
   width: 50%;
 }
 
-.Nav-Menu {
+.Nav_Menu {
   width: 70%;
   height: 50%;
   display: flex;
@@ -54,23 +54,23 @@ p {
   margin-top: 7em;
 }
 
-.Menu-Header {
+.Nav_Menu_Header {
   width: 60%;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
 }
 
-.Menu-Link-Wrapper {
+.Nav_Menu_Link_Wrapper {
   width: 60%;
   font-style: italic;
 }
 
-.Menu-Link-Wrapper li {
+.Nav_Menu_Link_Wrapper li {
   list-style-type: none;
 }
 
-.Menu-Link-Wrapper li a {
+.Nav_Menu_Link_Wrapper li a {
   background-image: none;
   color: #3f3f3f;
   opacity: 0.5;

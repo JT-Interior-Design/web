@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './Carousel.css';
+import SvgButton from '../components/shared/SvgButton';
+
 import { TweenMax, Power3, SlowMo, Sine } from 'gsap';
 
 class Carousel extends React.Component {
@@ -38,9 +40,9 @@ class Carousel extends React.Component {
                 currentImage: incoming,
                 animating: false,
               }),
-          },
+          }
         );
-      },
+      }
     );
   };
 
@@ -74,9 +76,9 @@ class Carousel extends React.Component {
                 currentImage: incoming,
                 animating: false,
               }),
-          },
+          }
         );
-      },
+      }
     );
   };
 
@@ -103,12 +105,10 @@ class Carousel extends React.Component {
         >
           &larr;
         </button>
-        <button
-          onClick={this.next}
-          className="Carousel__button Carousel__button--right"
-        >
+        <button onClick={this.next} className="Carousel__button Carousel__button--right">
           &rarr;
         </button>
+        <SvgButton type="Mouse" to="/" className="Mouse" />
       </div>
     );
   }

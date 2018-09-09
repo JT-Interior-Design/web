@@ -43,4 +43,6 @@ export default () => (
   </div>
 );
 
-// B5C780 -> green color from logo
+{
+  /* // B5C780 -> green color from logo */
+}

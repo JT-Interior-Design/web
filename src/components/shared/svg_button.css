@@ -21,3 +21,12 @@
   margin-left: -1em;
   margin-right: -1em;
 }
+
+.Mouse {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  font-size: inherit;
+  background-image: none;
+  cursor: default;
+}

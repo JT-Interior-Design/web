@@ -28,7 +28,6 @@ export default ({ children }) => (
         to="https://www.pinterest.com/stagstudiodesigns/"
       />
     </header>
-    <header />
     {children()}
     <footer />
   </div>

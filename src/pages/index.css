@@ -1,6 +1,7 @@
 .Container {
   display: flex;
-  height: 90%;
+  /* min-height: calc(100vh - 53px - 18px - 12px); */
+  flex-grow:1;
   width: 95%;
   margin: 18px auto;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);

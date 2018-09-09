@@ -7,7 +7,7 @@ const MouseIcon = props => (
         <path
           d="M24.25,0.5 L24.25,55.5"
           stroke="white"
-          fill="white"
+          fill="#B5C780"
           strokeLinecap="square"
           strokeWidth="4"
         />

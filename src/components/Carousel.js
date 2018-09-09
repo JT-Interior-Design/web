@@ -1,9 +1,35 @@
 import React from 'react';
+import _ from 'lodash';
 
 import './Carousel.css';
 import SvgButton from '../components/shared/SvgButton';
 
 import { TweenMax, Power3, SlowMo, Sine } from 'gsap';
+
+var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault) e.preventDefault();
+  e.returnValue = false;
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+function disableScroll() {
+  if (window.addEventListener)
+    // older FF
+    window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove = preventDefault; // mobile
+  document.onkeydown = preventDefaultForScrollKeys;
+}
 
 class Carousel extends React.Component {
   state = {
@@ -12,6 +38,21 @@ class Carousel extends React.Component {
     currentImage: 0,
     incomingImage: 1,
   };
+
+  componentDidMount() {
+    disableScroll();
+
+    window.addEventListener(
+      'wheel',
+      _.throttle(
+        e => {
+          e.deltaY > 0 ? this.next() : this.previous();
+        },
+        1600,
+        { trailing: false }
+      )
+    );
+  }
 
   next = () => {
     if (this.state.animating) return;
@@ -22,12 +63,6 @@ class Carousel extends React.Component {
         animating: true,
       }),
       () => {
-        // TweenMax.to(this.currentImgRef, 0.5, {
-        //   xPercent: -100,
-        //   onComplete: () => {
-        //     TweenMax.set(this.currentImgRef, { xPercent: 0 });
-        //   },
-        // });
         TweenMax.fromTo(
           this.incomingImgRef,
           0.8,
@@ -58,12 +93,6 @@ class Carousel extends React.Component {
         animating: true,
       }),
       () => {
-        // TweenMax.to(this.currentImgRef, 0.5, {
-        //   xPercent: 100,
-        //   onComplete: () => {
-        //     TweenMax.set(this.currentImgRef, { xPercent: 0 });
-        //   },
-        // });
         TweenMax.fromTo(
           this.incomingImgRef,
           0.8,
@@ -99,15 +128,6 @@ class Carousel extends React.Component {
             alt=""
           />
         ) : null}
-        <button
-          onClick={this.previous}
-          className="Carousel__button Carousel__button--left"
-        >
-          &larr;
-        </button>
-        <button onClick={this.next} className="Carousel__button Carousel__button--right">
-          &rarr;
-        </button>
         <SvgButton type="Mouse" to="/" className="Mouse" />
       </div>
     );

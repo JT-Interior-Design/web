@@ -1,12 +1,12 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import img1 from '../JTI WEBSITE Content/Visual Design/20160414_164352.jpg';
-import img2 from '../JTI WEBSITE Content/Visual Design/20160505_161529.jpg';
-import img3 from '../JTI WEBSITE Content/Visual Design/20170705_090251.jpg';
-import Carousel from '../components/Carousel';
 
-import SvgButton from '../shared/SvgButton';
-import NavLink from '../shared/NavLink';
+import Carousel from '../components/Carousel';
+import SvgButton from '../components/shared/SvgButton';
+import NavLink from '../components/shared/NavLink';
+import project_img from '../nav_carousel/projects.jpg';
+import blog_img from '../nav_carousel/living_room.jpg';
+import contact_img from '../nav_carousel/bedroom.jpg';
+// import about_img from '../nav_carousel/about.jpg';
 
 import './index.css';
 
@@ -38,10 +38,9 @@ export default () => (
       </div>
     </div>
     <div className="Carousel-Container">
-      <Carousel images={[img1, img2, img3]} />
+      <Carousel images={[project_img, blog_img, contact_img]} />
     </div>
   </div>
 );
 
-// Classic design, rooted in tradition, wistfully adorned.
 // B5C780 -> green color from logo

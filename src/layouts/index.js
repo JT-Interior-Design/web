@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SvgButton from '../shared/SvgButton';
+import SvgButton from '../components/shared/SvgButton';
 import './index.css';
 
 export default ({ children }) => (

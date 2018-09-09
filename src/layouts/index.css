@@ -11,15 +11,16 @@ body {
       rgba(255, 255, 255, 0.3)
     ),
     url('../JTI WEBSITE Content/backgroundImg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'PT Serif', serif;
 }
 
 .Background-Wrapper {
   padding: 15px;
   min-height: 100vh;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 

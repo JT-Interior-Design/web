@@ -4,6 +4,19 @@
   cursor: pointer;
   height: 20px;
   transition: all ease 0.2s;
+  z-index: 300;
+  animation: appear 4s normal;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .Social_Button:hover {

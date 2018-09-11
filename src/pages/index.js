@@ -12,12 +12,10 @@ import blog_img from '../nav_carousel/fan.jpg';
 import './index.css';
 
 export default () => (
-  <div style={{ height: '100vh' }}>
-    <Loading className="Loading" />
-    <div className="Container">
-      <div className="Nav_Container">
-
+  // <div style={{ height: '100vh' }}>
+  //
   <div className="Container">
+    <Loading className="Loading" />
     <div className="Nav-Container">
       <div>
         <div className="Header">
@@ -26,10 +24,6 @@ export default () => (
           <span>TAYLOR</span>
         </div>
         <p>classic design, rooted in tradition, wistfully adorned.</p>
-
-      
-        <Carousel images={[project_img, blog_img]} />
-
       </div>
       <div className="Nav-Menu">
         <ul className="Menu-Link-Wrapper">
@@ -46,12 +40,11 @@ export default () => (
             <NavLink className="NavLink" type="Contact" to="/projects" />
           </li>
         </ul>
-
       </div>
     </div>
+    <div className="Carousel-Container">
+      <Carousel images={[project_img, blog_img]} />
+    </div>
   </div>
+  // </div>
 );
-
-{
-  /* // B5C780 -> green color from logo */
-}

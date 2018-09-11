@@ -7,7 +7,7 @@
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 
-.Nav_Container {
+.Nav-Container {
   display: flex;
   flex-direction: column;
 
@@ -43,7 +43,7 @@
   margin: 0;
 }
 
-.Carousel_Container {
+.Carousel-Container {
   width: 50%;
 }
 
@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-.Nav_Menu_Header {
+.Nav-Menu-Header {
   width: 60%;
   text-align: center;
   font-weight: bold;
@@ -64,7 +64,7 @@
   margin: 0 auto;
 }
 
-.Nav_Menu_Link_Wrapper li {
+.Menu-Link-Wrapper li {
   list-style-type: none;
   text-align: center;
   margin: 0;

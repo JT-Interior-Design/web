@@ -16,32 +16,37 @@ export default () => (
     <Loading className="Loading" />
     <div className="Container">
       <div className="Nav_Container">
+
+  <div className="Container">
+    <div className="Nav-Container">
+      <div>
         <div className="Header">
           <span>JASON</span>
           <SvgButton className="Logo" type="Logo" to="/" />
           <span>TAYLOR</span>
         </div>
         <p>classic design, rooted in tradition, wistfully adorned.</p>
-        <div className="Nav_Menu">
-          <div className="Nav_Menu_Header">Navigation</div>
-          <ul className="Nav_Menu_Link_Wrapper">
-            <li>
-              <NavLink className="NavLink" type="Projects" to="/projects" />
-            </li>
-            <li>
-              <NavLink className="NavLink" type="Blog" to="/projects" />
-            </li>
-            <li>
-              <NavLink className="NavLink" type="About" to="/projects" />
-            </li>
-            <li>
-              <NavLink className="NavLink" type="Contact" to="/projects" />
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="Carousel_Container">
+
+      
         <Carousel images={[project_img, blog_img]} />
+
+      </div>
+      <div className="Nav-Menu">
+        <ul className="Menu-Link-Wrapper">
+          <li>
+            <NavLink className="NavLink" type="Projects" to="/projects" />
+          </li>
+          <li>
+            <NavLink className="NavLink" type="Blog" to="/projects" />
+          </li>
+          <li>
+            <NavLink className="NavLink" type="About" to="/projects" />
+          </li>
+          <li>
+            <NavLink className="NavLink" type="Contact" to="/projects" />
+          </li>
+        </ul>
+
       </div>
     </div>
   </div>

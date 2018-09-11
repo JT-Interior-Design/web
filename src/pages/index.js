@@ -2,15 +2,21 @@ import React from 'react';
 
 import Carousel from '../components/Carousel';
 import SvgButton from '../components/shared/SvgButton';
+import Loading from '../components/loading/Loading';
 import NavLink from '../components/shared/NavLink';
 import project_img from '../nav_carousel/projects.jpg';
-import blog_img from '../nav_carousel/living_room.jpg';
-import contact_img from '../nav_carousel/bedroom.jpg';
-// import about_img from '../nav_carousel/about.jpg';
+import blog_img from '../nav_carousel/fan.jpg';
+// import about_img from '../nav_carousel/deer.jpg';
+// import contact_img from '../nav_carousel/bedroom.jpg';
 
 import './index.css';
 
 export default () => (
+  <div style={{ height: '100vh' }}>
+    <Loading className="Loading" />
+    <div className="Container">
+      <div className="Nav_Container">
+
   <div className="Container">
     <div className="Nav-Container">
       <div>
@@ -20,6 +26,10 @@ export default () => (
           <span>TAYLOR</span>
         </div>
         <p>classic design, rooted in tradition, wistfully adorned.</p>
+
+      
+        <Carousel images={[project_img, blog_img]} />
+
       </div>
       <div className="Nav-Menu">
         <ul className="Menu-Link-Wrapper">
@@ -36,10 +46,8 @@ export default () => (
             <NavLink className="NavLink" type="Contact" to="/projects" />
           </li>
         </ul>
+
       </div>
-    </div>
-    <div className="Carousel-Container">
-      <Carousel images={[project_img, blog_img, contact_img]} />
     </div>
   </div>
 );

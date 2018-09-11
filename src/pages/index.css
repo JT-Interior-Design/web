@@ -1,13 +1,13 @@
 .Container {
   display: flex;
-  /* min-height: calc(100vh - 53px - 18px - 12px); */
   flex-grow: 1;
   width: 95%;
+  height: 88%;
   margin: 18px auto;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 
-.Nav-Container {
+.Nav_Container {
   display: flex;
   flex-direction: column;
 
@@ -15,6 +15,7 @@
   background: white;
   opacity: 0.7;
 }
+
 .Header {
   display: flex;
   flex-direction: row;
@@ -38,11 +39,11 @@
   font-style: italic;
   text-align: center;
   letter-spacing: 2px;
-  color: #b5c780;
+  color: #9eca50;
   margin: 0;
 }
 
-.Carousel-Container {
+.Carousel_Container {
   width: 50%;
 }
 
@@ -52,7 +53,7 @@
   align-items: center;
 }
 
-.Menu-Header {
+.Nav_Menu_Header {
   width: 60%;
   text-align: center;
   font-weight: bold;
@@ -63,7 +64,7 @@
   margin: 0 auto;
 }
 
-.Menu-Link-Wrapper li {
+.Nav_Menu_Link_Wrapper li {
   list-style-type: none;
   text-align: center;
   margin: 0;
@@ -72,6 +73,7 @@
 .Menu-Link-Wrapper:hover .NavLink:not(:hover) {
   transform: scale(0.90);
 }
+
 
 .Menu-Link-Wrapper li:not(:last-child) {
   margin-bottom: 30px;

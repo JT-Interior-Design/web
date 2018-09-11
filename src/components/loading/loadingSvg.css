@@ -1,0 +1,89 @@
+.Loading_Svg {
+  width: 40em;
+  margin-top: 2em;
+  margin-left: 15em;
+}
+
+.st0 {
+  fill: #6e4f38;
+  stroke-width: 0;
+  stroke: #000000;
+}
+
+.st1 {
+  fill: black;
+  stroke-width: 0;
+  stroke: #000000;
+}
+
+.st2 {
+  fill: #96ba3d;
+  stroke: #000000;
+  stroke-width: 0;
+}
+
+.svg_animate {
+  stroke-dasharray: 1000;
+  animation: dash 4s linear alternate;
+}
+
+.fill_brown {
+  animation-name: fill_brown;
+}
+
+.fill_green {
+  animation-name: fill_green;
+}
+
+.fill_black {
+  animation-name: fill_black;
+}
+
+/* .slow {
+    animation: dash 22s linear alternate;
+  } */
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill_brown {
+  from {
+    stroke-dashoffset: 1000;
+    fill: white;
+    stroke-width: 2;
+  }
+  to {
+    fill: #6e4f38;
+    stroke-width: 0;
+  }
+}
+
+@keyframes fill_green {
+  from {
+    stroke-dashoffset: 1000;
+    fill: white;
+    stroke-width: 2;
+  }
+  to {
+    fill: #96ba3d;
+    stroke-width: 0;
+  }
+}
+
+@keyframes fill_black {
+  from {
+    stroke-dashoffset: 1000;
+    fill: white;
+    stroke-width: 2;
+  }
+  to {
+    fill: black;
+    stroke-width: 0;
+  }
+}

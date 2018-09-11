@@ -7,7 +7,6 @@ const MouseIcon = props => (
         <path
           d="M24.25,0.5 L24.25,55.5"
           stroke="white"
-          fill="#B5C780"
           strokeLinecap="square"
           strokeWidth="4"
         />
@@ -27,7 +26,6 @@ const MouseIcon = props => (
         <path
           d="M23.9,121 C23.9,127.294331 23.9,131.305987 23.9,133.034969"
           stroke="white"
-          fill="white"
           strokeWidth="4"
           strokeLinecap="square"
         />

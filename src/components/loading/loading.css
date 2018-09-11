@@ -1,0 +1,25 @@
+.Loading {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: -2%;
+  z-index: 300;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url('../../JTI WEBSITE Content/backgroundImg.jpg');
+  animation: fade 4s normal;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}

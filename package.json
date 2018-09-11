@@ -10,6 +10,7 @@
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-typography": "^1.7.19",
     "gsap": "^2.0.2",
     "lodash": "^4.17.10",

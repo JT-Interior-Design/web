@@ -1,4 +1,4 @@
-.Social-Button {
+.Social_Button {
   margin: 0 10px;
   background-image: none;
   cursor: pointer;
@@ -6,7 +6,7 @@
   transition: all ease 0.2s;
 }
 
-.Social-Button:hover {
+.Social_Button:hover {
   -webkit-transform: scale(1.6);
   -moz-transform: scale(1.6);
   -o-transform: scale(1.6);

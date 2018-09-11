@@ -17,14 +17,14 @@ body {
   font-family: 'PT Serif', serif;
 }
 
-.Background-Wrapper {
+.Background_Wrapper {
   padding: 15px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.Social-Wrapper {
+.Social_Wrapper {
   display: flex;
   justify-content: flex-end;
 }

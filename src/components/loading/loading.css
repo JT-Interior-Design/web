@@ -1,9 +1,11 @@
 .Loading {
-  position: absolute;
+  position: fixed;
   min-width: 100vw;
   min-height: 100vh;
-  top: -2%;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  background-color: white;
   background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.3),
@@ -21,5 +23,6 @@
   }
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }

@@ -7,10 +7,10 @@
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 
-.Nav_Container {
+.Nav-Container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   width: 50%;
   background: white;
   opacity: 0.7;
@@ -21,58 +21,98 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 5em;
+  margin-top: 3em;
   font-weight: bold;
   letter-spacing: 2.5px;
 }
 
 .Header span {
   color: black;
-  font-size: 3em;
+  font-size: 2em;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5em;
 }
 
-p {
+.Header + p {
   font-weight: 900;
-  font-size: 0.7em;
+  font-size: 1em;
   font-style: italic;
   text-align: center;
-  margin-bottom: 0;
   letter-spacing: 2px;
   color: #9eca50;
+  margin: 0;
+  margin-right: 1em;
 }
 
-.Carousel_Container {
+.Carousel-Container {
   width: 50%;
 }
 
-.Nav_Menu {
-  width: 70%;
-  height: 50%;
+.Nav-Menu {
+  flex-grow: 1;
   display: flex;
-  align-items: baseline;
-  margin-top: 7em;
+  align-items: center;
 }
 
-.Nav_Menu_Header {
+.Nav-Menu-Header {
   width: 60%;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
 }
 
-.Nav_Menu_Link_Wrapper {
-  width: 60%;
-  font-style: italic;
+.Menu-Link-Wrapper {
+  margin: 0 auto;
 }
 
-.Nav_Menu_Link_Wrapper li {
+.Menu-Link-Wrapper li {
   list-style-type: none;
+  text-align: center;
+  margin: 0;
 }
 
-.Nav_Menu_Link_Wrapper li a {
+.Menu-Link-Wrapper:hover .NavLink:not(:hover) {
+  transform: scale(0.9);
+}
+
+.Menu-Link-Wrapper li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.NavLink {
   background-image: none;
-  color: #3f3f3f;
-  opacity: 0.5;
+  color: #424242;
+  font-size: 20px;
+  position: relative;
+  font-style: italic;
+  text-shadow: none;
+  border-bottom: 1px solid #cdcdcd;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.NavLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: hsl(82, 54%, 55%);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+}
+
+.NavLink:hover {
+  transform: translateY(-5px) scale(1.25);
+  border-bottom-color: transparent;
+  color: black;
+}
+
+.NavLink:hover::after {
+  transform: translateX(0);
 }

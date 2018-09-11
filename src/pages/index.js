@@ -14,7 +14,7 @@ import './index.css';
 export default () => (
   <div className="Container">
     <Loading className="Loading" />
-    <div className="Nav-Container">
+    <div className="Nav__Container">
       <div>
         <div className="Header">
           <span>JASON</span>
@@ -23,8 +23,8 @@ export default () => (
         </div>
         <p>classic design, rooted in tradition, wistfully adorned.</p>
       </div>
-      <div className="Nav-Menu">
-        <ul className="Menu-Link-Wrapper">
+      <div className="Nav__Menu">
+        <ul className="Menu__Link__Wrapper">
           <li>
             <NavLink className="NavLink" type="Projects" to="/projects" />
           </li>
@@ -40,7 +40,7 @@ export default () => (
         </ul>
       </div>
     </div>
-    <div className="Carousel-Container">
+    <div className="Carousel__Container">
       <Carousel images={[project_img, blog_img]} />
     </div>
   </div>

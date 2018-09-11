@@ -7,7 +7,7 @@
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
 
-.Nav-Container {
+.Nav__Container {
   display: flex;
   flex-direction: column;
 
@@ -43,39 +43,38 @@
   margin: 0;
 }
 
-.Carousel-Container {
+.Carousel__Container {
   width: 50%;
 }
 
-.Nav-Menu {
+.Nav__Menu {
   flex-grow: 1;
   display: flex;
   align-items: center;
 }
 
-.Nav-Menu-Header {
+.Nav__Menu__Header {
   width: 60%;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
 }
 
-.Menu-Link-Wrapper {
+.Menu__Link__Wrapper {
   margin: 0 auto;
 }
 
-.Menu-Link-Wrapper li {
+.Menu__Link__Wrapper li {
   list-style-type: none;
   text-align: center;
   margin: 0;
 }
 
-.Menu-Link-Wrapper:hover .NavLink:not(:hover) {
-  transform: scale(0.90);
+.Menu__Link__Wrapper:hover .NavLink:not(:hover) {
+  transform: scale(0.9);
 }
 
-
-.Menu-Link-Wrapper li:not(:last-child) {
+.Menu__Link__Wrapper li:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -89,12 +88,12 @@
   border-bottom: 1px solid #cdcdcd;
   display: inline-block;
   overflow: hidden;
-  transition: all .3s;
+  transition: all 0.3s;
   backface-visibility: hidden;
 }
 
 .NavLink::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -103,7 +102,7 @@
   background-color: hsl(75, 39%, 70%);
   z-index: -1;
   transform: translateX(-100%);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .NavLink:hover {

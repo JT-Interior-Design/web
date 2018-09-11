@@ -12,8 +12,6 @@ import blog_img from '../nav_carousel/fan.jpg';
 import './index.css';
 
 export default () => (
-  // <div style={{ height: '100vh' }}>
-  //
   <div className="Container">
     <Loading className="Loading" />
     <div className="Nav-Container">
@@ -46,5 +44,4 @@ export default () => (
       <Carousel images={[project_img, blog_img]} />
     </div>
   </div>
-  // </div>
 );

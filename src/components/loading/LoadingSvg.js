@@ -5,14 +5,14 @@ import './loadingSvg.css';
 const LoadingSvg = props => (
   <svg
     {...props}
-    className="Loading_Svg"
+    className="Loading__Svg"
     viewBox="0 0 1200 1000"
     style={{ enableBackground: 'new 0 0 1200 1000' }}
   >
     <g>
       <g>
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M679.6,567.7c0.1,0.8,0.2,1.6,0.3,2.4c-0.2-0.8-0.4-1.6-0.6-2.4c0,0,0.1,11.6-3.4,29.3
 			c-3.8,28.3-14.7,84.4-43,110.7c0,0,6-15.2,8.5-30.8c-8.5,11.8-18.8,23.5-31.6,34.4c-13.2-11.3-23.8-23.4-32.5-35.6
 			c2.3,16,8.7,32,8.7,32c-37.4-34.9-44.4-122.1-44.8-127.6c-0.8-7.8-0.8-12.4-0.8-12.4s-33.2,60.5-1,129.7c0,0-2.4-21.2,2.4-32.3
@@ -22,7 +22,7 @@ const LoadingSvg = props => (
       </g>
       <g>
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M594.4,612.6c-2.4,0-5.6-11.9-5.6-11.9l20.7-2.4v-32.6c0,0-12.7,0-18.3,7.2c-5.6,7.2-1.6,9.5,4,7.9
 			c5.6-1.6,10.3,4.8,4.8,9.5c-5.6,4.8-19.1,7.2-19.1,7.2s-9.5-32.6,28.6-37.4v-7.9l-11.9,2.4c0,0,3.2-35-8.7-54
 			c0,0,3.2,21.5-7.2,30.2l-7.2-23.8l-33.4,2.4l3.2,23.8l19.9-4l7.2-6.4l2.4,11.1c0,0-22.3,25.4-22.3,29.4c0,4,1.6,25.4,6.4,35
@@ -32,7 +32,7 @@ const LoadingSvg = props => (
       </g>
       <g>
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M654,529.2l19.9,4l3.2-23.8l-33.4-2.4l-7.2,23.8c-10.3-8.7-7.2-30.2-7.2-30.2c-11.9,19.1-8.7,54-8.7,54
 			l-11.9-2.4v7.9c38.1,4.8,28.6,37.4,28.6,37.4s-13.5-2.4-19.1-7.2c-5.6-4.8-0.8-11.1,4.8-9.5c5.6,1.6,9.5-0.8,4-7.9
 			c-5.6-7.2-18.3-7.2-18.3-7.2v32.6l20.7,2.4c0,0-3.2,11.9-5.6,11.9c-2.4,0-15.9,1.6-15.9,1.6v18.3c0,0,8.7,2.4,16.7,0
@@ -42,7 +42,7 @@ const LoadingSvg = props => (
       </g>
       <g>
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M538.7,496.6c-2.4-3.2-17.5-6.4-17.5-6.4s-0.8-10.3-12.7-25.4c-11.9-15.1-66.8-15.9-66.8-15.9
 			c12.7,45.3,52.5,47.7,71.5,52.4c19.1,4.8,31,31.8,31,31.8l0.8-22.3C545.1,510.9,541.1,499.8,538.7,496.6z M450.8,455.5
 			c59.9-1.9,65.7,37.1,65.7,37.1C474.6,496.3,450.8,455.5,450.8,455.5z"
@@ -50,7 +50,7 @@ const LoadingSvg = props => (
       </g>
       <g>
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M708.8,464.8c-11.9,15.1-12.7,25.4-12.7,25.4s-15.1,3.2-17.5,6.4c-2.4,3.2-6.4,14.3-6.4,14.3l0.8,22.3
 			c0,0,11.9-27,31-31.8c19.1-4.8,58.8-7.2,71.5-52.4C775.6,448.9,720.7,449.7,708.8,464.8z M701.9,492.6c0,0,7.7-34.2,65.7-37.1
 			C767.6,455.5,743.8,496.3,701.9,492.6z"
@@ -59,7 +59,7 @@ const LoadingSvg = props => (
       <g>
         <g>
           <path
-            className="st1 svg_animate fill_black"
+            className="Logo__Header Svg__Animate Fill__Black"
             d="M324,839.6v-42.8c0-2.8-0.2-4.5-0.6-5.2c-0.4-0.7-1.2-1.1-2.3-1.1l-2.8-0.2c-1-0.1-1.5-0.6-1.5-1.7
 				c0-0.7,0.1-1.1,0.3-1.3c0.2-0.2,0.6-0.3,1.3-0.3c0.1,0,0.5,0,1,0c3.5,0.2,7,0.3,10.7,0.3c3.5,0,6.9-0.1,10.4-0.3c0.6,0,1,0,1.1,0
 				c0.6,0,1.1,0.1,1.3,0.3c0.2,0.2,0.3,0.6,0.3,1.3c0,1-0.5,1.6-1.6,1.7l-2.8,0.2c-1.1,0.1-1.8,0.4-2.2,1.1
@@ -67,7 +67,7 @@ const LoadingSvg = props => (
 				C323.3,848.6,324,844.8,324,839.6z"
           />
           <path
-            className="st1 svg_animate fill_black"
+            className="Logo__Header Svg__Animate Fill__Black"
             d="M352.8,827.5l14.4-39c0-0.1,0.1-0.2,0.1-0.4c0.4-1.1,0.9-1.6,1.5-1.6c0.1,0,0.2,0,0.4,0
 				c1,0.1,1.9,0.2,2.8,0.2c0.9,0,1.9-0.1,2.9-0.2c0.2,0,0.3,0,0.4,0c0.6,0,1.2,0.5,1.5,1.5c0.1,0.2,0.1,0.3,0.2,0.5l13.8,39.8
 				c1.2,3.7,2.3,6.2,3.3,7.7c0.9,1.5,1.9,2.3,3,2.5l1.4,0.2c0.1,0,0.2,0.1,0.3,0.1c0.5,0.1,0.8,0.2,0.9,0.2c0.1,0,0.2,0.1,0.2,0.4
@@ -81,7 +81,7 @@ const LoadingSvg = props => (
 				L361.3,815.8z"
           />
           <path
-            className="st1 svg_animate fill_black"
+            className="Logo__Header Svg__Animate Fill__Black"
             d="M406.4,825.9h2.2c1.1,0,1.8,0.9,2.1,2.8c0.1,0.5,0.1,1,0.2,1.2c0.6,3.3,1.8,5.8,3.5,7.3
 				c1.7,1.5,4.2,2.3,7.2,2.3c3.8,0,6.8-0.9,8.9-2.8s3.2-4.5,3.2-7.8c0-1.4-0.2-2.6-0.6-3.6c-0.4-1.1-1-1.9-1.8-2.6
 				c-1.6-1.5-4.9-2.9-10-4.3c-1.4-0.4-2.4-0.7-3.2-0.9c-4.6-1.4-8.1-3.3-10.3-5.8c-2.2-2.4-3.3-5.5-3.3-9.2c0-5.1,1.9-9.2,5.7-12.2
@@ -94,7 +94,7 @@ const LoadingSvg = props => (
 				c0-2.1-0.1-4.3-0.3-6.6c-0.1-0.5-0.1-0.9-0.1-1c0-0.5,0.2-0.8,0.4-1C405.1,826,405.6,826,406.4,825.9z"
           />
           <path
-            className="st1 svg_animate fill_black"
+            className="Logo__Header Svg__Animate Fill__Black"
             d="M451.2,814.5c0-6.1,0.6-10.8,1.8-14.3c1.2-3.5,3.1-6.4,5.8-8.7c2-1.7,4.7-3.1,8.3-4c3.5-1,7.4-1.5,11.7-1.5
 				c4.2,0,8.1,0.5,11.6,1.5c3.6,1,6.3,2.3,8.3,4c2.7,2.3,4.7,5.2,5.9,8.7c1.2,3.5,1.8,8.3,1.8,14.3c0,6-0.6,10.8-1.8,14.3
 				c-1.2,3.5-3.2,6.5-5.9,8.8c-2,1.7-4.7,3-8.3,4c-3.6,1-7.4,1.5-11.6,1.5c-4.3,0-8.2-0.5-11.7-1.5c-3.5-1-6.3-2.3-8.3-4
@@ -104,7 +104,7 @@ const LoadingSvg = props => (
 				c-2.7,0-5,0.5-7,1.4c-2,0.9-3.6,2.3-4.8,4.2c-1.1,1.6-1.9,3.8-2.4,6.4C464,803.9,463.8,808.3,463.8,814.5z"
           />
           <path
-            className="st1 svg_animate fill_black"
+            className="Logo__Header Svg__Animate Fill__Black"
             d="M515.9,820.9l0.1-25.8c0-1.2-0.3-2.3-0.9-3.2c-0.6-0.9-1.3-1.4-2.1-1.5l-2.1-0.2c-1-0.1-1.5-0.6-1.5-1.7
 				c0-0.7,0.1-1.1,0.3-1.3c0.2-0.2,0.6-0.3,1.2-0.3c0,0,0.9,0,2.5,0.1c1.6,0.1,3.3,0.1,4.9,0.1c1.1,0,2.3,0,3.6-0.1
 				c1.3-0.1,2.1-0.1,2.3-0.1c0.6,0,1,0,1.2,0.1c0.2,0,0.3,0.1,0.4,0.2c0.1,0.1,0.3,0.4,0.6,0.8c1.4,2.1,2.9,4.2,4.4,6.2l26,34.2
@@ -124,7 +124,7 @@ const LoadingSvg = props => (
         <g>
           <g>
             <path
-              className="st1 svg_animate fill_black"
+              className="Logo__Header Svg__Animate Fill__Black"
               d="M605.5,832.1v-31.6c0-1.5,0-3.1,0-4.7c0-1.7-0.1-3.4-0.1-5.3h-4.8c-2.4,0-4.1,0.4-5.1,1.2
 					c-0.9,0.8-1.8,2.7-2.5,5.8c-0.1,0.5-0.2,1.1-0.4,1.8c-0.2,1.4-0.7,2-1.6,2h-2.7c-0.5,0-0.8-0.1-1-0.3c-0.2-0.2-0.3-0.5-0.3-0.9
 					c0,0,0-0.1,0-0.3c0-0.2,0-0.4,0-0.5c0-0.9,0-2.3-0.1-4.3c0-2-0.1-3.5-0.1-4.6c0-0.9,0-1.8-0.1-2.7c0-0.1,0-0.2,0-0.2
@@ -139,7 +139,7 @@ const LoadingSvg = props => (
 					c0.1,0,0.2,0,0.4,0l3.3-0.3c1.1-0.1,1.8-0.5,2.2-1.1c0.4-0.6,0.6-2.1,0.6-4.6V832.1z"
             />
             <path
-              className="st1 svg_animate fill_black"
+              className="Logo__Header Svg__Animate Fill__Black"
               d="M644.1,827.5l14.4-39c0-0.1,0.1-0.2,0.1-0.4c0.4-1.1,0.9-1.6,1.5-1.6c0.1,0,0.2,0,0.4,0
 					c1,0.1,1.9,0.2,2.8,0.2c0.9,0,1.9-0.1,2.9-0.2c0.2,0,0.3,0,0.3,0c0.6,0,1.2,0.5,1.5,1.5c0.1,0.2,0.1,0.3,0.2,0.5l13.8,39.8
 					c1.2,3.7,2.3,6.2,3.3,7.7c0.9,1.5,1.9,2.3,3,2.5l1.4,0.2c0.1,0,0.2,0.1,0.3,0.1c0.5,0.1,0.8,0.2,0.9,0.2c0.1,0,0.2,0.1,0.2,0.4
@@ -153,7 +153,7 @@ const LoadingSvg = props => (
 					L652.5,815.8z"
             />
             <path
-              className="st1 svg_animate fill_black"
+              className="Logo__Header Svg__Animate Fill__Black"
               d="M709.4,832.2v-11.8c0-2.2-0.6-4.1-1.8-5.8c-0.2-0.2-0.3-0.4-0.4-0.5l-11-16.9c-1.6-2.4-2.9-4.1-3.7-5
 					c-0.9-0.9-1.7-1.4-2.4-1.6l-1.1-0.2h-0.2h-0.4c-0.3,0-0.6-0.1-0.7-0.4c-0.1-0.2-0.2-0.7-0.2-1.3c0-0.6,0.1-1.1,0.3-1.3
 					c0.2-0.2,0.6-0.3,1.3-0.3c0.1,0,0.5,0,1.1,0c3.4,0.2,6.9,0.3,10.4,0.3c3.5,0,7-0.1,10.4-0.3c0.6,0,1,0,1.1,0
@@ -169,7 +169,7 @@ const LoadingSvg = props => (
 					c1.1-0.1,1.8-0.5,2.2-1.1c0.4-0.6,0.6-2.1,0.6-4.6V832.2z"
             />
             <path
-              className="st1 svg_animate fill_black"
+              className="Logo__Header Svg__Animate Fill__Black"
               d="M752.5,832.2v-35.5c0-2.8-0.2-4.5-0.6-5.2c-0.4-0.6-1.1-1-2.2-1.1l-2.1-0.2c-1-0.1-1.5-0.6-1.5-1.7
 					c0-0.7,0.1-1.1,0.3-1.3c0.2-0.2,0.6-0.3,1.2-0.3c0.1,0,0.5,0,1.1,0c3.3,0.2,6.7,0.3,10,0.3c3.2,0,6.4-0.1,9.6-0.3
 					c0.6,0,0.9,0,1,0c0.6,0,1.1,0.1,1.2,0.3c0.2,0.2,0.3,0.6,0.3,1.3c0,1-0.5,1.6-1.5,1.7h0l-2.1,0.2c-1.1,0.1-1.8,0.5-2.2,1.1
@@ -180,7 +180,7 @@ const LoadingSvg = props => (
 					c0-1,0.4-1.5,1.3-1.6c0.1,0,0.2,0,0.2,0l2.1-0.2c1.1-0.1,1.8-0.5,2.2-1.1c0.4-0.6,0.6-2.1,0.6-4.6V832.2z"
             />
             <path
-              className="st1 svg_animate fill_black"
+              className="Logo__Header Svg__Animate Fill__Black"
               d="M794.1,814.5c0-6.1,0.6-10.8,1.8-14.3c1.2-3.5,3.1-6.4,5.8-8.7c2-1.7,4.7-3.1,8.3-4c3.5-1,7.4-1.5,11.7-1.5
 					c4.2,0,8.1,0.5,11.6,1.5c3.6,1,6.3,2.3,8.3,4c2.7,2.3,4.7,5.2,5.9,8.7c1.2,3.5,1.8,8.3,1.8,14.3s-0.6,10.8-1.8,14.3
 					c-1.2,3.5-3.2,6.5-5.9,8.8c-2,1.7-4.7,3-8.3,4c-3.6,1-7.4,1.5-11.6,1.5c-4.3,0-8.2-0.5-11.7-1.5c-3.5-1-6.3-2.3-8.3-4
@@ -190,7 +190,7 @@ const LoadingSvg = props => (
 					c-2.7,0-5,0.5-7,1.4c-2,0.9-3.6,2.3-4.8,4.2c-1.1,1.6-1.9,3.8-2.4,6.4C806.9,803.9,806.6,808.3,806.6,814.5z"
             />
             <path
-              className="st1 svg_animate fill_black"
+              className="Logo__Header Svg__Animate Fill__Black"
               d="M858.5,832.2v-35.5c0-2.8-0.2-4.5-0.6-5.2c-0.4-0.6-1.1-1-2.2-1.1l-2.1-0.2c-1-0.1-1.5-0.6-1.5-1.7
 					c0-0.7,0.1-1.1,0.3-1.3c0.2-0.2,0.6-0.3,1.3-0.3c0.2,0,0.6,0,1.3,0.1c2.9,0.2,5.6,0.3,8.3,0.3c1.9,0,5-0.1,9.3-0.2
 					c4.3-0.1,7.5-0.2,9.9-0.2c5,0,8.6,0.9,10.9,2.8c2.3,1.9,3.4,4.9,3.4,9c0,4.3-1.1,7.5-3.3,9.7c-2.2,2.2-5.8,3.7-10.9,4.5
@@ -209,101 +209,101 @@ const LoadingSvg = props => (
       <g>
         <g>
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M553,493.2l-8.5-19.1l18-22.3c0,0,23.3,14.8,40.3,15.9v27.5c0,0-13.8-6.4-25.4-8.5
 				C565.8,484.7,553,493.2,553,493.2z"
           />
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M651.6,493.2l8.5-19.1l-18-22.3c0,0-23.3,14.8-40.3,15.9v27.5c0,0,13.8-6.4,25.4-8.5
 				C638.9,484.7,651.6,493.2,651.6,493.2z"
           />
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M573.2,458.2c0,0-31.8-13.8-38.1-42.4V315.1l67.8-38.1v-9.5l-79.5,41.3v102.8c0,0-4.2,23.3,7.4,41.3
 				c11.7,18,19.1,29.7,19.1,29.7L573.2,458.2z"
           />
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M539.3,463.5c0,0-29.7-32.8-80.5-47.7c-50.9-14.8-142-54-129.3-139.9c12.7-85.8,44.5-118.7,36-158.9
 				c0,0,14.8,13.8,0,58.3c-14.8,44.5-33.9,108.1-18,144.1c15.9,36,58.3,60.4,97.5,73.1c39.2,12.7,101.7,40.3,117.6,59.3L539.3,463.5
 				z"
           />
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M482.1,407.3c0,0-28.6-3.2-38.1-40.3c-9.5-37.1,28.6-58.3,28.6-87.9c0,0-13.8,24.4-28.6,42.4
 				c-14.8,18-25.4,57.2,2.1,78.4"
           />
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M329.5,307.7c0,0,4.5-29.8-18.4-50.3c-23-20.7-32.5-44-28.2-56.7c0,0,3.2,19.1,18,35
 				c14.8,15.9,33.9,29,36,49.1C339,304.9,329.5,307.7,329.5,307.7z"
           />
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M383.8,363.1c0,0-26.2-32.6-15.1-66.8c0,0-19.1,33.4-1.6,63.6L383.8,363.1z"
           />
           <path
-            className="st0 svg_animate fill_brown"
+            className="Logo__Antlers__Body Svg__Animate Fill_Brown"
             d="M522.8,406.8c0,0,7.9-18.3-14.3-39.7c-22.3-21.5-32.6-37.4-31-48.5c0,0,10.3,22.3,24.6,31.8
 				c14.3,9.5,27.8,15.9,27,31.8C528.4,398.1,522.8,406.8,522.8,406.8z"
           />
           <g>
             <path
-              className="st0 svg_animate fill_brown"
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
               d="M631.3,458.2c0,0,31.8-13.8,38.1-42.4V315.1l-67.1-37.9v-9.5l78.7,41.1v102.8c0,0,4.2,23.3-7.4,41.3
 					c-11.7,18-19.1,29.7-19.1,29.7L631.3,458.2z"
             />
             <path
-              className="st0 svg_animate fill_brown"
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
               d="M665.2,463.5c0,0,29.7-32.8,80.5-47.7c50.9-14.8,142-54,129.3-139.9c-12.7-85.8-44.5-118.7-36-158.9
 					c0,0-14.8,13.8,0,58.3c14.8,44.5,33.9,108.1,18,144.1c-15.9,36-58.3,60.4-97.5,73.1c-39.2,12.7-101.7,40.3-117.6,59.3
 					L665.2,463.5z"
             />
             <path
-              className="st0 svg_animate fill_brown"
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
               d="M722.4,407.3c0,0,28.6-3.2,38.1-40.3c9.5-37.1-28.6-58.3-28.6-87.9c0,0,13.8,24.4,28.6,42.4
 					c14.8,18,25.4,57.2-2.1,78.4"
             />
             <path
-              className="st0 svg_animate fill_brown"
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
               d="M875,307.7c0,0-4.5-29.8,18.4-50.3c23-20.7,32.4-44,28.2-56.7c0,0-3.2,19.1-18,35
 					c-14.8,15.9-33.9,29-36,49.1C865.4,304.9,875,307.7,875,307.7z"
             />
             <path
-              className="st0 svg_animate fill_brown"
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
               d="M820.7,363.1c0,0,26.2-32.6,15.1-66.8c0,0,19.1,33.4,1.6,63.6L820.7,363.1z"
             />
             <path
-              className="st0 svg_animate fill_brown"
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
               d="M680.6,406.8c0,0-7.9-18.3,14.3-39.7c22.3-21.5,32.6-37.4,31-48.5c0,0-10.3,22.3-24.6,31.8
 					c-14.3,9.5-27.8,15.9-27,31.8C675,398.1,680.6,406.8,680.6,406.8z"
             />
           </g>
         </g>
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M523.4,308.8c0,0-4.5-15.6,8.2-35.5c12.7-19.9,27-38.1,27-54.8c0,0,5.6,21.5-7.2,39.7
 			c-12.7,18.3-19.9,41.3-17.5,53.2L523.4,308.8z"
         />
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M679.8,308.8c0,0,4.5-15.6-8.2-35.5c-12.7-19.9-27-38.1-27-54.8c0,0-5.6,21.5,7.2,39.7
 			c12.7,18.3,19.9,41.3,17.5,53.2L679.8,308.8z"
         />
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M681,312.2c0,0-4-33.4,15.1-52.5c0,0-23.8,14.3-25.4,30.2L681,312.2z"
         />
         <path
-          className="st0 svg_animate fill_brown"
+          className="Logo__Antlers__Body Svg__Animate Fill_Brown"
           d="M522.8,312.2c0,0,4-33.4-15.1-52.5c0,0,23.8,14.3,25.4,30.2L522.8,312.2z"
         />
       </g>
       <g>
         <g>
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M468.1,885.9v-18.6c0-1.5-0.1-2.4-0.3-2.7c-0.2-0.3-0.6-0.5-1.2-0.6l-1.1-0.1c-0.5,0-0.8-0.3-0.8-0.9
 				c0-0.4,0.1-0.6,0.2-0.7c0.1-0.1,0.3-0.2,0.6-0.2c0.1,0,0.2,0,0.6,0c1.8,0.1,3.5,0.1,5.3,0.1c1.7,0,3.4,0,5.1-0.1
 				c0.3,0,0.5,0,0.6,0c0.3,0,0.6,0.1,0.7,0.2c0.1,0.1,0.1,0.3,0.1,0.7c0,0.6-0.3,0.9-0.8,0.9h0l-1.1,0.1c-0.6,0.1-1,0.3-1.2,0.6
@@ -313,7 +313,7 @@ const LoadingSvg = props => (
 				c0.6-0.1,1-0.2,1.2-0.6c0.2-0.3,0.3-1.1,0.3-2.4V885.9z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M489.9,879.9l0-13.6c0-0.6-0.1-1.2-0.4-1.7c-0.3-0.5-0.7-0.7-1.1-0.8l-1.1-0.1c-0.5,0-0.8-0.3-0.8-0.9
 				c0-0.4,0-0.6,0.1-0.7c0.1-0.1,0.3-0.2,0.7-0.2c0,0,0.5,0,1.3,0.1c0.9,0,1.7,0.1,2.6,0.1c0.6,0,1.2,0,1.9-0.1
 				c0.7,0,1.1-0.1,1.2-0.1c0.3,0,0.5,0,0.6,0c0.1,0,0.2,0.1,0.2,0.1c0,0.1,0.1,0.2,0.3,0.4c0.8,1.1,1.5,2.2,2.3,3.2l13.7,18
@@ -330,7 +330,7 @@ const LoadingSvg = props => (
 				C489.9,880.6,489.9,880.2,489.9,879.9z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M535.1,885.8v-16.6c0-0.8,0-1.6,0-2.5c0-0.9,0-1.8-0.1-2.8h-2.5c-1.3,0-2.2,0.2-2.7,0.6
 				c-0.5,0.4-0.9,1.4-1.3,3c-0.1,0.3-0.1,0.6-0.2,1c-0.1,0.7-0.4,1.1-0.8,1.1h-1.4c-0.3,0-0.4,0-0.6-0.1c-0.1-0.1-0.2-0.2-0.2-0.4
 				c0,0,0-0.1,0-0.2c0-0.1,0-0.2,0-0.3c0-0.5,0-1.2,0-2.3c0-1,0-1.9,0-2.4c0-0.5,0-1,0-1.4c0-0.1,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.2
@@ -344,7 +344,7 @@ const LoadingSvg = props => (
 				c0-0.5,0.2-0.8,0.7-0.9c0.1,0,0.1,0,0.2,0l1.8-0.2c0.6-0.1,1-0.2,1.2-0.6c0.2-0.3,0.3-1.1,0.3-2.4V885.8z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M562.9,885.9v-18.6c0-1.5-0.1-2.4-0.3-2.7c-0.2-0.3-0.6-0.5-1.2-0.6l-1.1-0.1c-0.5,0-0.8-0.3-0.8-0.9
 				c0-0.4,0-0.6,0.1-0.7c0.1-0.1,0.3-0.2,0.7-0.2c0.1,0,0.2,0,0.6,0c2.2,0.1,4.5,0.1,6.9,0.1c4,0,7.8-0.1,11.5-0.2
 				c0.5,0,0.8,0,0.9,0l1.1,0c0.3,0,0.5,0.1,0.6,0.2c0.1,0.1,0.2,0.3,0.2,0.7c0,0,0,0.1,0,0.3c0,1-0.1,2-0.1,3c0,0.6,0,1.2,0.1,1.8
@@ -361,7 +361,7 @@ const LoadingSvg = props => (
 				c0.2-0.3,0.3-1.1,0.3-2.4V885.9z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M594.5,885.9v-18.6c0-1.5-0.1-2.4-0.3-2.7c-0.2-0.3-0.6-0.5-1.2-0.6l-1.1-0.1c-0.5,0-0.8-0.3-0.8-0.9
 				c0-0.4,0.1-0.6,0.2-0.7c0.1-0.1,0.3-0.2,0.7-0.2c0.1,0,0.3,0,0.7,0c1.5,0.1,3,0.2,4.3,0.2c1,0,2.6,0,4.9-0.1
 				c2.2-0.1,4-0.1,5.2-0.1c2.6,0,4.5,0.5,5.7,1.5c1.2,1,1.8,2.6,1.8,4.7c0,2.2-0.6,3.9-1.7,5.1c-1.2,1.2-3.1,1.9-5.7,2.4l6.3,9.4
@@ -375,7 +375,7 @@ const LoadingSvg = props => (
 				c-0.1,0-0.2,0-0.2,0c0,0.3,0,0.6-0.1,1c0,0.3,0,0.8,0,1.3V875.3z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M630,885.9v-18.6c0-1.5-0.1-2.4-0.3-2.7c-0.2-0.3-0.6-0.5-1.2-0.6l-1.1-0.1c-0.5,0-0.8-0.3-0.8-0.9
 				c0-0.4,0-0.6,0.2-0.7c0.1-0.1,0.3-0.2,0.6-0.2c0.1,0,0.2,0,0.6,0c1.8,0.1,3.5,0.1,5.3,0.1c1.7,0,3.4,0,5.1-0.1c0.3,0,0.5,0,0.6,0
 				c0.3,0,0.6,0.1,0.7,0.2c0.1,0.1,0.1,0.3,0.1,0.7c0,0.6-0.3,0.9-0.8,0.9h0l-1.1,0.1c-0.6,0.1-1,0.3-1.2,0.6
@@ -385,7 +385,7 @@ const LoadingSvg = props => (
 				c0.6-0.1,1-0.2,1.2-0.6c0.2-0.3,0.3-1.1,0.3-2.4V885.9z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M647.4,876.6c0-3.2,0.3-5.7,0.9-7.5c0.6-1.8,1.6-3.4,3-4.6c1-0.9,2.5-1.6,4.3-2.1c1.9-0.5,3.9-0.8,6.1-0.8
 				c2.2,0,4.2,0.3,6.1,0.8c1.9,0.5,3.3,1.2,4.4,2.1c1.4,1.2,2.5,2.7,3.1,4.6c0.6,1.8,0.9,4.4,0.9,7.5c0,3.2-0.3,5.7-0.9,7.5
 				c-0.6,1.9-1.7,3.4-3.1,4.6c-1,0.9-2.5,1.6-4.4,2.1c-1.9,0.5-3.9,0.8-6.1,0.8c-2.2,0-4.3-0.3-6.1-0.8c-1.9-0.5-3.3-1.2-4.3-2.1
@@ -395,7 +395,7 @@ const LoadingSvg = props => (
 				c-1.4,0-2.6,0.2-3.7,0.7c-1,0.5-1.9,1.2-2.5,2.2c-0.6,0.8-1,2-1.3,3.4C654.1,871,654,873.3,654,876.6z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M687.3,885.9v-18.6c0-1.5-0.1-2.4-0.3-2.7c-0.2-0.3-0.6-0.5-1.2-0.6l-1.1-0.1c-0.5,0-0.8-0.3-0.8-0.9
 				c0-0.4,0.1-0.6,0.2-0.7c0.1-0.1,0.3-0.2,0.7-0.2c0.1,0,0.3,0,0.7,0c1.5,0.1,3,0.2,4.3,0.2c1,0,2.6,0,4.9-0.1
 				c2.2-0.1,4-0.1,5.2-0.1c2.6,0,4.5,0.5,5.7,1.5c1.2,1,1.8,2.6,1.8,4.7c0,2.2-0.6,3.9-1.7,5.1c-1.2,1.2-3.1,1.9-5.7,2.4l6.3,9.4
@@ -409,7 +409,7 @@ const LoadingSvg = props => (
 				c-0.1,0-0.2,0-0.2,0c0,0.3,0,0.6-0.1,1c0,0.3,0,0.8,0,1.3V875.3z"
           />
           <path
-            className="st2 svg_animate fill_green slow"
+            className="Logo__Leaves__Test Svg__Animate Fill__Green slow"
             d="M720.8,882.6h1.2c0.6,0,1,0.5,1.1,1.5c0,0.3,0.1,0.5,0.1,0.7c0.3,1.7,0.9,3,1.9,3.8c0.9,0.8,2.2,1.2,3.8,1.2
 				c2,0,3.5-0.5,4.7-1.5c1.1-1,1.7-2.3,1.7-4.1c0-0.7-0.1-1.4-0.3-1.9c-0.2-0.6-0.5-1-0.9-1.4c-0.8-0.8-2.6-1.5-5.3-2.3
 				c-0.7-0.2-1.3-0.3-1.7-0.5c-2.4-0.7-4.2-1.8-5.4-3c-1.2-1.3-1.7-2.9-1.7-4.8c0-2.7,1-4.8,3-6.4c2-1.6,4.7-2.4,8.1-2.4
@@ -424,420 +424,420 @@ const LoadingSvg = props => (
         </g>
       </g>
       <path
-        className="st0  svg_animate fill_brown"
+        className="Logo__Antlers__Body  Svg__Animate Fill_Brown"
         d="M537.2,521.2c0,0,11.1,15.1,3.2,36.8c0,0,12.7-11.7,10.6-28.6C548.8,512.5,537.2,521.2,537.2,521.2z"
       />
       <path
-        className="st0  svg_animate fill_brown"
+        className="Logo__Antlers__Body  Svg__Animate Fill_Brown"
         d="M679.9,521.2c0,0-11.1,15.1-3.2,36.8c0,0-12.7-11.7-10.6-28.6C668.2,512.5,679.9,521.2,679.9,521.2z"
       />
       <g>
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M505.9,257.6c0,0-9.2,3.5-10.6-10.8C495.3,246.8,508.8,248.1,505.9,257.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M508,267.7c0,0-5,8.5-15-1.8C493.1,265.8,504.4,258.4,508,267.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M518.2,261c0,0-9.8-1.1-4.5-14.4C513.7,246.6,525.1,253.8,518.2,261z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M515.5,286.6c0,0-8.1,5.6-12.8-7.9C502.6,278.7,516,276.7,515.5,286.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M499.8,290.6c0,0-8.1,5.6-12.8-7.9C487,282.7,500.4,280.6,499.8,290.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M515.7,304.9c0,0-8.1,5.6-12.8-7.9C502.9,297,516.3,294.9,515.7,304.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M527.1,268.7c0,0-8.3-5.2,2.2-14.9C529.2,253.8,536.4,265.3,527.1,268.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M544.8,245.2c0,0-9.7,1.8-8.5-12.5C536.3,232.7,549.4,236.3,544.8,245.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M550.4,231.4c0,0-9.7,1.8-8.5-12.5C541.9,218.9,554.9,222.6,550.4,231.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M537.7,227.2c0,0-9.7,1.8-8.5-12.5C529.2,214.7,542.2,218.3,537.7,227.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M549.5,270.9c0,0,0.1-9.8,13.9-5.9C563.4,265,557.3,277,549.5,270.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M558.2,256.6c0,0,0.1-9.8,13.9-5.9C572.1,250.7,566,262.7,558.2,256.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M569.9,264.2c0,0,0.1-9.8,13.9-5.9C583.8,258.3,577.7,270.4,569.9,264.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M497.2,333.9c0,0-8.4-5.2,2.1-15C499.3,318.9,506.5,330.4,497.2,333.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M485.2,320.4c0,0-8.4-5.2,2.1-15C487.3,305.4,494.6,316.9,485.2,320.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M474.7,337.4c0,0-8.7,4.6-11.8-9.4C462.9,328,476.4,327.6,474.7,337.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M487.4,353.4c0,0-5,8.5-15-1.7C472.4,351.7,483.6,344.2,487.4,353.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M469.1,346.3c0,0-5,8.5-15-1.7C454.1,344.5,465.4,337,469.1,346.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M480.2,367.7c0,0-5,8.5-15-1.7C465.2,366,476.5,358.5,480.2,367.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M501.5,346.4c0,0-5.7-8,7.7-13C509.2,333.4,511.5,346.8,501.5,346.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M454.2,299.6c0,0-9.8,0.9-7.3-13.2C446.9,286.4,459.5,291.2,454.2,299.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M442.3,311.5c0,0-9.8,0.9-7.3-13.2C434.9,298.3,447.6,303.1,442.3,311.5z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M439.1,294c0,0-9.8,0.9-7.3-13.2C431.8,280.8,444.4,285.6,439.1,294z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M457.9,284.6c0,0-8.1-5.6,2.8-14.8C460.7,269.7,467.3,281.5,457.9,284.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M472.6,275.8c0,0-8.1-5.6,2.8-14.8C475.4,261,482,272.8,472.6,275.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M446.7,279c0,0-8.1-5.6,2.8-14.8C449.6,264.2,456.2,275.9,446.7,279z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M471.6,300.9c0,0-0.6-9.8,13.4-7C485,294,479.9,306.5,471.6,300.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M432.3,329c0,0-9.3,3.4-10.5-10.9C421.8,318.1,435.3,319.5,432.3,329z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M431.1,313.1c0,0-9.3,3.4-10.5-10.9C420.7,302.2,434.1,303.6,431.1,313.1z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M427.1,297.2c0,0-9.3,3.4-10.5-10.9C416.7,286.3,430.1,287.7,427.1,297.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M436.6,274.7c0,0-9.8-1-4.7-14.3C431.9,260.4,443.4,267.5,436.6,274.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M470.8,321.6c0,0-9.8-1-4.7-14.3C466.1,307.3,477.6,314.4,470.8,321.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M372.4,319.3c0,0-4-9,10.1-11.2C382.5,308.1,382.1,321.6,372.4,319.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M376.1,336.8c0,0-4-9,10.1-11.2C386.2,325.6,385.8,339.1,376.1,336.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M387.2,322c0,0-4-9,10.1-11.2C397.3,310.8,396.9,324.3,387.2,322z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M370.8,273.8c0,0-4-9,10.1-11.2C380.9,262.5,380.5,276.1,370.8,273.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M359.2,207.2c0,0,0.7-9.8,14.2-5.1C373.4,202,366.6,213.8,359.2,207.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M300.9,227.6c0,0-7.1-6.8,5.1-14.2C306.1,213.4,310.8,226,300.9,227.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M279,220.3c0,0-8,5.7-13-7.7C266,212.6,279.3,210.3,279,220.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M366.4,187.8c0,0,0.7-9.8,14.2-5.1C380.6,182.7,373.9,194.4,366.4,187.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M351.2,168.9c0,0-8.2,5.4-12.7-8.2C338.5,160.7,351.9,158.9,351.2,168.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M323.3,302.4c0,0-8.2,5.4-12.7-8.2C310.7,294.2,324.1,292.4,323.3,302.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M305.4,258.1c0,0-2.8,9.5-15,2C290.4,260,299.5,250,305.4,258.1z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M371.2,306.2c0,0-4-9,10.1-11.2C381.3,295,380.9,308.5,371.2,306.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M385.5,305c0,0-4-9,10.1-11.2C395.6,293.8,395.2,307.3,385.5,305z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M370.4,291.1c0,0-4-9,10.1-11.2C380.5,279.9,380.1,293.4,370.4,291.1z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M361.4,297.9c0,0-9.8,1.2-7.7-13C353.7,284.9,366.5,289.4,361.4,297.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M364.3,283.3c0,0-9.8-0.4-5.6-14C358.7,269.3,370.7,275.7,364.3,283.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M562.2,241.5c0,0,0.1-9.8,13.9-5.9C576.1,235.6,570,247.6,562.2,241.5z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M565.1,230.2c0,0-3.8-9.1,10.4-11C575.4,219.2,574.7,232.7,565.1,230.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M557.1,213.5c0,0-3.8-9.1,10.4-11C567.5,202.6,566.7,216.1,557.1,213.5z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M696.8,257.6c0,0,9.2,3.5,10.6-10.8C707.4,246.8,693.9,248.1,696.8,257.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M694.6,267.7c0,0,5,8.5,15-1.8C709.6,265.8,698.3,258.4,694.6,267.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M684.4,261c0,0,9.8-1.1,4.5-14.4C689,246.6,677.5,253.8,684.4,261z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M687.2,286.6c0,0,8.1,5.6,12.8-7.9C700,278.7,686.6,276.7,687.2,286.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M702.8,290.6c0,0,8.1,5.6,12.9-7.9C715.7,282.7,702.3,280.6,702.8,290.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M686.9,304.9c0,0,8.1,5.6,12.9-7.9C699.8,297,686.4,294.9,686.9,304.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M675.6,268.7c0,0,8.3-5.2-2.2-14.9C673.4,253.8,666.3,265.3,675.6,268.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M657.8,245.2c0,0,9.7,1.8,8.5-12.5C666.3,232.7,653.3,236.3,657.8,245.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M652.3,231.4c0,0,9.7,1.8,8.5-12.5C660.7,218.9,647.7,222.6,652.3,231.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M665,227.2c0,0,9.7,1.8,8.5-12.5C673.5,214.7,660.4,218.3,665,227.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M653.1,270.9c0,0-0.1-9.8-13.9-5.9C639.2,265,645.3,277,653.1,270.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M644.4,256.6c0,0-0.1-9.8-13.9-5.9C630.5,250.7,636.6,262.7,644.4,256.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M632.8,264.2c0,0-0.1-9.8-13.9-5.9C618.8,258.3,625,270.4,632.8,264.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M705.5,333.9c0,0,8.4-5.2-2.1-15C703.4,318.9,696.2,330.4,705.5,333.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M717.4,320.4c0,0,8.4-5.2-2.1-15C715.3,305.4,708.1,316.9,717.4,320.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M727.9,337.4c0,0,8.7,4.6,11.8-9.4C739.8,328,726.3,327.6,727.9,337.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M715.3,353.4c0,0,5,8.5,15-1.7C730.3,351.7,719,344.2,715.3,353.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M733.5,346.3c0,0,5,8.5,15-1.7C748.5,344.5,737.3,337,733.5,346.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M722.4,367.7c0,0,5,8.5,15-1.7C737.4,366,726.2,358.5,722.4,367.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M701.1,346.4c0,0,5.7-8-7.7-13C693.5,333.4,691.2,346.8,701.1,346.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M748.5,299.6c0,0,9.8,0.9,7.3-13.2C755.8,286.4,743.1,291.2,748.5,299.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M760.4,311.5c0,0,9.8,0.9,7.3-13.2C767.7,298.3,755.1,303.1,760.4,311.5z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M763.6,294c0,0,9.8,0.9,7.3-13.2C770.9,280.8,758.2,285.6,763.6,294z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M744.8,284.6c0,0,8.1-5.6-2.8-14.8C742,269.7,735.3,281.5,744.8,284.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M730.1,275.8c0,0,8.1-5.6-2.8-14.8C727.3,261,720.6,272.8,730.1,275.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M755.9,279c0,0,8.1-5.6-2.8-14.8C753.1,264.2,746.4,275.9,755.9,279z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M731,300.9c0,0,0.6-9.8-13.4-7C717.6,294,722.8,306.5,731,300.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M770.3,329c0,0,9.3,3.4,10.5-10.9C780.8,318.1,767.4,319.5,770.3,329z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M771.5,313.1c0,0,9.2,3.4,10.5-10.9C782,302.2,768.5,303.6,771.5,313.1z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M775.5,297.2c0,0,9.3,3.4,10.5-10.9C786,286.3,772.5,287.7,775.5,297.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M766.1,274.7c0,0,9.8-1,4.7-14.3C770.8,260.4,759.2,267.5,766.1,274.7z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M731.9,321.6c0,0,9.8-1,4.7-14.3C736.6,307.3,725.1,314.4,731.9,321.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M830.3,319.3c0,0,4-9-10.1-11.2C820.2,308.1,820.6,321.6,830.3,319.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M826.6,336.8c0,0,4-9-10.1-11.2C816.5,325.6,816.9,339.1,826.6,336.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M815.5,322c0,0,4-9-10.1-11.2C805.4,310.8,805.8,324.3,815.5,322z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M831.9,273.8c0,0,4-9-10.1-11.2C821.8,262.5,822.2,276.1,831.9,273.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M843.5,207.2c0,0-0.7-9.8-14.2-5.1C829.3,202,836,213.8,843.5,207.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M901.7,227.6c0,0,7.1-6.8-5.1-14.2C896.6,213.4,891.9,226,901.7,227.6z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M923.7,220.3c0,0,8,5.7,13-7.7C936.7,212.6,923.3,210.3,923.7,220.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M836.2,187.8c0,0-0.7-9.8-14.2-5.1C822.1,182.7,828.8,194.4,836.2,187.8z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M851.5,168.9c0,0,8.2,5.4,12.7-8.2C864.2,160.7,850.8,158.9,851.5,168.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M879.3,302.4c0,0,8.2,5.4,12.7-8.2C892,294.2,878.6,292.4,879.3,302.4z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M897.3,258.1c0,0,2.8,9.5,15,2C912.3,260,903.2,250,897.3,258.1z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M831.5,306.2c0,0,4-9-10.1-11.2C821.4,295,821.8,308.5,831.5,306.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M817.2,305c0,0,4-9-10.1-11.2C807.1,293.8,807.5,307.3,817.2,305z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M832.3,291.1c0,0,4-9-10.1-11.2C822.2,279.9,822.6,293.4,832.3,291.1z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M841.3,297.9c0,0,9.8,1.2,7.7-13C848.9,284.9,836.2,289.4,841.3,297.9z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M838.3,283.3c0,0,9.8-0.4,5.6-14C843.9,269.3,832,275.7,838.3,283.3z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M640.4,241.5c0,0-0.1-9.8-13.9-5.9C626.5,235.6,632.6,247.6,640.4,241.5z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M637.6,230.2c0,0,3.8-9.1-10.4-11C627.2,219.2,628,232.7,637.6,230.2z"
         />
         <path
-          className="st2 svg_animate fill_green"
+          className="Logo__Leaves__Test Svg__Animate Fill__Green"
           d="M645.5,213.5c0,0,3.8-9.1-10.4-11C635.2,202.6,635.9,216.1,645.5,213.5z"
         />
       </g>

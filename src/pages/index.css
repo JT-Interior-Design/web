@@ -5,114 +5,88 @@
   height: 88%;
   margin: 18px auto;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+  background-color: white;
 }
 
-.Nav-Container {
-  display: flex;
-  flex-direction: column;
-
-  width: 50%;
-  background: white;
-  opacity: 0.7;
-}
-
-.Header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3em;
-  font-weight: bold;
-  letter-spacing: 2.5px;
-}
-
-.Header span {
-  color: black;
-  font-size: 2em;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-  margin-top: 1.5em;
-}
-
-.Header + p {
-  font-weight: 900;
-  font-size: 1em;
-  font-style: italic;
-  text-align: center;
-  letter-spacing: 2px;
-  color: #9eca50;
-  margin: 0;
-  margin-right: 1em;
+.Container--Rel {
+  position: relative;
 }
 
 .Carousel-Container {
   width: 50%;
 }
 
-.Nav-Menu {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
-.Nav-Menu-Header {
-  width: 60%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.Menu-Link-Wrapper {
-  margin: 0 auto;
-}
-
-.Menu-Link-Wrapper li {
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-}
-
-.Menu-Link-Wrapper:hover .NavLink:not(:hover) {
-  transform: scale(0.9);
-}
-
-.Menu-Link-Wrapper li:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.NavLink {
-  background-image: none;
-  color: #424242;
-  font-size: 20px;
-  position: relative;
-  font-style: italic;
-  text-shadow: none;
-  border-bottom: 1px solid #cdcdcd;
-  display: inline-block;
-  overflow: hidden;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-}
-
-.NavLink::after {
-  content: '';
+.About__Img__Container {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 100%;
-  height: 10px;
-  background-color: hsl(82, 54%, 55%);
-  z-index: -1;
-  transform: translateX(-100%);
-  transition: all 0.3s;
+  width: 70%;
+  height: 100%;
+  background-image: url('../about.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.NavLink:hover {
-  transform: translateY(-5px) scale(1.25);
-  border-bottom-color: transparent;
-  color: black;
+.About__Logo__Container {
+  text-align: center;
+  width: 70%;
+  position: relative;
+  left: 30%;
+  padding: 0 1em;
 }
 
-.NavLink:hover::after {
-  transform: translateX(0);
+.About__Logo {
+  background-image: none;
+}
+
+.About__Logo__Text {
+  font-weight: 900;
+  font-size: 0.2em;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #9eca50;
+  margin: 0;
+  margin-top: -1.2em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #9eca50;
+  padding-bottom: 0.5em;
+}
+
+.About__Content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding-top: 1em;
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.Name {
+  width: 70%;
+  position: relative;
+  left: 30%;
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+}
+
+.Text {
+  width: 70%;
+  left: 30%;
+  position: relative;
+  padding-right: 1em;
+  font-size: 18px;
+  margin: 0;
+  text-indent: 1em;
+  text-align: justify;
+}
+
+.Text--Size {
+  width: 75%;
+  left: 25%;
 }

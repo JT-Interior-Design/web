@@ -35,7 +35,7 @@ export default () => (
             <NavLink className="NavLink" type="About" to="/projects" />
           </li>
           <li>
-            <NavLink className="NavLink" type="Contact" to="/projects" />
+            <NavLink className="NavLink" type="Contact" to="/contact" />
           </li>
         </ul>
       </div>

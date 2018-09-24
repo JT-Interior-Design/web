@@ -11,7 +11,10 @@
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-favicon": "^3.1.4",
+    "gatsby-plugin-glamor": "^2.0.5",
     "gatsby-plugin-typography": "^1.7.19",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.13.1",
     "gsap": "^2.0.2",
     "lodash": "^4.17.10",
     "typography-theme-fairy-gates": "^0.15.11"

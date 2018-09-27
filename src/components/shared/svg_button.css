@@ -4,6 +4,19 @@
   cursor: pointer;
   height: 20px;
   transition: all ease 0.2s;
+  z-index: 300;
+  animation: appear 4s normal;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .Social__Button:hover {
@@ -16,10 +29,10 @@
 
 .Logo {
   background-image: none;
-  width: 20%;
+  width: 25%;
   margin-top: -1.2em;
-  margin-left: -1em;
-  margin-right: -1em;
+  margin-left: -2.3em;
+  margin-right: -2.3em;
 }
 
 .Mouse {

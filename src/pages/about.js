@@ -10,15 +10,13 @@ export default () => (
         <SvgButton className="About__Logo" type="Logo" to="/" />
         <p className="About__Logo__Text">INTERIORS</p>
       </div>
-      <h1 className="Name">
-        JASON TAYLOR
-        {/* <br /> */}
-      </h1>
+      <h1 className="Name">JASON TAYLOR</h1>
 
       <p className="Text">
         J.T. is known for his innovation and ability to create solutions. His designs,
         though rooted in tradition, mean nothing without a meaningful and emotional
-        connection to his clients. <br />
+        connection to his clients.
+        <br />
         <br />
       </p>
       <p className="Text">

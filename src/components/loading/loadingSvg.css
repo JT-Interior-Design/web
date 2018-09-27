@@ -1,41 +1,41 @@
-.Loading_Svg {
+.Loading__Svg {
   width: 40em;
   margin-top: 2em;
   margin-left: 15em;
 }
 
-.st0 {
+.Logo__Antlers__Body {
   fill: #6e4f38;
   stroke-width: 0;
   stroke: #000000;
 }
 
-.st1 {
+.Logo__Header {
   fill: black;
   stroke-width: 0;
   stroke: #000000;
 }
 
-.st2 {
+.Logo__Leaves__Test {
   fill: #96ba3d;
   stroke: #000000;
   stroke-width: 0;
 }
 
-.svg_animate {
+.Svg__Animate {
   stroke-dasharray: 1000;
   animation: dash 4s linear alternate;
 }
 
-.fill_brown {
+.Fill_Brown {
   animation-name: fill_brown;
 }
 
-.fill_green {
+.Fill__Green {
   animation-name: fill_green;
 }
 
-.fill_black {
+.Fill__Black {
   animation-name: fill_black;
 }
 

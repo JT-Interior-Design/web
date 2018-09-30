@@ -26,7 +26,7 @@ class Navigation extends Component {
               isOpen: !prevState.isOpen,
             })),
         });
-      }
+      },
     );
     console.log(this.state.animating);
   };
@@ -53,7 +53,7 @@ class Navigation extends Component {
               <NavLink className="NavLink" type="About" to="/about/" />
             </li>
             <li>
-              <NavLink className="NavLink" type="WORK WITH ME" to="/projects" />
+              <NavLink className="NavLink" type="WORK WITH ME" to="/contact" />
             </li>
           </ul>
         </div>
@@ -65,7 +65,9 @@ class Navigation extends Component {
             top: '50%',
             cursor: 'pointer',
           }}
-          onClick={!this.state.animating ? this.animateOut : this.state.animateIn}
+          onClick={
+            !this.state.animating ? this.animateOut : this.state.animateIn
+          }
           ref={node => (this.incomingRef = node)}
         >
           <Hamburger />

@@ -3,7 +3,12 @@ import g from 'glamorous';
 
 export default () => (
   <g.Div padding={20}>
-    <g.H2 marginBottom={20} textTransform="uppercase" letterSpacing={3}>
+    <g.H2
+      marginBottom={20}
+      marginTop={0}
+      textTransform="uppercase"
+      letterSpacing={3}
+    >
       Jason Taylor
     </g.H2>
     <g.P marginBottom={10}>jasontaylor@email.com</g.P>

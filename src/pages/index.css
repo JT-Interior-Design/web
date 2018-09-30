@@ -79,13 +79,11 @@
   width: 70%;
   left: 30%;
   position: relative;
-  font-style: italic;
-  text-shadow: none;
-  border-bottom: 1px solid #cdcdcd;
-  display: inline-block;
-  overflow: hidden;
-  transition: all 0.3s;
-  backface-visibility: hidden;
+  padding-right: 2em;
+  font-size: 18px;
+  margin: 0;
+  text-indent: 1em;
+  text-align: justify;
 }
 
 .NavLink::after {

@@ -15,9 +15,15 @@ const NavButton = g.button({
   '&:hover': {
     backgroundColor: '#eee',
   },
+  '&:focus': {
+    outline: 'none',
+  },
+  '&:active': {
+    outline: 'none',
+  },
 });
 
-export default () => (
+export default ({ selected, changeSelected }) => (
   <g.Div
     flexBasis={250}
     padding="20px 10px"
@@ -32,9 +38,9 @@ export default () => (
       height={60}
       backgroundColor="#9eca50"
       transition="all 0.3s"
-      transform="translateY(0)"
+      transform={`translateY(${selected * 70}px)`}
     />
-    <NavButton>Request a Callback</NavButton>
-    <NavButton>Contact Us Directly</NavButton>
+    <NavButton onClick={() => changeSelected(0)}>Request a Callback</NavButton>
+    <NavButton onClick={() => changeSelected(1)}>Contact Us Directly</NavButton>
   </g.Div>
 );

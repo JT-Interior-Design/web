@@ -4,6 +4,10 @@ import ContactSidebar from '../components/contact/ContactSidebar';
 import ContactMain from '../components/contact/ContactMain';
 
 export default class extends React.PureComponent {
+  state = { selected: 0 };
+
+  changeSelected = value => this.setState({ selected: value });
+
   render() {
     return (
       <g.Div
@@ -16,8 +20,11 @@ export default class extends React.PureComponent {
       >
         <g.H1 marginTop={0}>Contact</g.H1>
         <g.Div display="flex" flex={1}>
-          <ContactSidebar />
-          <ContactMain />
+          <ContactSidebar
+            selected={this.state.selected}
+            changeSelected={this.changeSelected}
+          />
+          <ContactMain selected={this.state.selected} />
         </g.Div>
       </g.Div>
     );

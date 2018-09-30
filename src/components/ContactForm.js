@@ -1,10 +1,14 @@
 import React from 'react';
 import g from 'glamorous';
 import Input from './ContactFormInput';
+import ContactFormTextArea from './ContactFormTextArea';
 
 const InputGroup = g.div({
   flexBasis: '50%',
   marginBottom: 20,
+  '&:nth-child(odd)': {
+    paddingRight: 10,
+  },
 });
 
 const Label = g.label({
@@ -39,10 +43,10 @@ export default () => (
         <Label htmlFor="Postal Code">Postal Code:</Label>
         <Input id="Postal Code" type="text" placeholder="Enter postal code" />
       </InputGroup>
-      <InputGroup>
-        <Label htmlFor="Region">Region:</Label>
-        <Input id="Region" type="text" placeholder="Enter region" />
-      </InputGroup>
+      <g.Div width="100%">
+        <Label>Message(Optional): </Label>
+        <ContactFormTextArea placeholder="Enter message" />
+      </g.Div>
     </g.Div>
   </g.Form>
 );

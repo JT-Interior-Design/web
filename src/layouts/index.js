@@ -4,6 +4,7 @@ import SvgButton from '../components/shared/SvgButton';
 import './index.css';
 
 export default ({ children }) => (
+
   <div className="Background__Wrapper">
     <header className="Social__Wrapper">
       {/* <SvgButton type="Email" to="https://www.google.com/" /> */}
@@ -28,6 +29,7 @@ export default ({ children }) => (
         to="https://www.pinterest.com/stagstudiodesigns/"
       />
     </header>
+
     {children()}
     <footer />
   </div>

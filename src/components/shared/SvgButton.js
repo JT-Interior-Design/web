@@ -34,8 +34,8 @@ const SvgButton = ({ type, to, className }) => (
 
 SvgButton.propTypes = {
   type: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  href: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default SvgButton;

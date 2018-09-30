@@ -5,83 +5,79 @@
   height: 88%;
   margin: 18px auto;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+  background-color: white;
 }
 
-.Nav__Container {
-  display: flex;
-  flex-direction: column;
+.Container--Rel {
+  position: relative;
+}
 
+.Carousel-Container {
   width: 50%;
-  background: white;
-  opacity: 0.7;
 }
 
-.Header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5em;
-  font-weight: bold;
-  letter-spacing: 2.5px;
+.About__Img__Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-image: url('../about.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.Header span {
-  color: black;
-  font-size: 3em;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
+.About__Logo__Container {
+  text-align: center;
+  width: 70%;
+  position: relative;
+  left: 30%;
+  padding: 0 1em;
 }
 
-.Header + p {
+.About__Logo {
+  background-image: none;
+}
+
+.About__Logo__Text {
   font-weight: 900;
-  font-size: 0.7em;
+  font-size: 0.2em;
   font-style: italic;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #9eca50;
   margin: 0;
+  margin-top: -1.2em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #9eca50;
+  padding-bottom: 0.5em;
 }
 
-.Carousel__Container {
+.About__Content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding-top: 1em;
   width: 50%;
+  height: 100%;
+  clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.Nav__Menu {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
-.Nav__Menu__Header {
-  width: 60%;
+.Name {
+  width: 70%;
+  position: relative;
+  left: 30%;
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
   text-align: center;
-  font-weight: bold;
-  font-size: 16px;
+  font-family: 'PT Serif', serif;
 }
 
-.Menu__Link__Wrapper {
-  margin: 0 auto;
-}
-
-.Menu__Link__Wrapper li {
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-}
-
-.Menu__Link__Wrapper:hover .NavLink:not(:hover) {
-  transform: scale(0.9);
-}
-
-.Menu__Link__Wrapper li:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.NavLink {
-  background-image: none;
-  color: #424242;
-  font-size: 20px;
+.Text {
+  width: 70%;
+  left: 30%;
   position: relative;
   font-style: italic;
   text-shadow: none;
@@ -111,6 +107,7 @@
   color: black;
 }
 
-.NavLink:hover::after {
-  transform: translateX(0);
+.Text--Size {
+  width: 75%;
+  left: 25%;
 }

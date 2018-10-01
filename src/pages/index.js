@@ -12,7 +12,7 @@ import './index.css';
 
 export default () => (
   <div className="Container">
-    <Loading className="Loading" />
+    {/* <Loading className="Loading" /> */}
     <Navigation />
     <div className="Carousel-Container">
       <Carousel images={[project_img, blog_img]} />

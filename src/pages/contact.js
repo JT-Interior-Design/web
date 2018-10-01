@@ -11,7 +11,7 @@ export default class extends React.PureComponent {
   render() {
     return (
       <g.Div
-        backgroundColor="rgba(255, 255, 255, 0.7)"
+        backgroundColor="rgba(255, 255, 255, 0.8)"
         flex={1}
         padding="40px 30px"
         margin={20}

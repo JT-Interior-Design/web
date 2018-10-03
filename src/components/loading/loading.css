@@ -12,7 +12,7 @@
       rgba(255, 255, 255, 0.3)
     ),
     url('../../JTI WEBSITE Content/backgroundImg.jpg');
-  animation: fade 4s normal;
+  animation: fade 1.5s normal;
   animation-delay: 4s;
   animation-fill-mode: forwards;
 }

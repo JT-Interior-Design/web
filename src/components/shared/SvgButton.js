@@ -1,7 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Email, FaceBook, Instagram, Twitter, Pinterest, Logo, Mouse } from './icons';
+import {
+  Email,
+  FaceBook,
+  Instagram,
+  Twitter,
+  Pinterest,
+  Logo,
+  Mouse,
+} from './icons';
 
 import './svg_button.css';
 
@@ -17,8 +25,7 @@ const selector = type => {
       return <Twitter />;
     case 'Pinterest':
       return <Pinterest />;
-    case 'Logo':
-      return <Logo />;
+
     case 'Mouse':
       return <Mouse />;
     default:

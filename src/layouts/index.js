@@ -1,13 +1,14 @@
 import React from 'react';
 
 import SvgButton from '../components/shared/SvgButton';
+import NavLink from '../components/shared/NavLink';
 import './index.css';
 
 export default ({ children }) => (
-
   <div className="Background__Wrapper">
     <header className="Social__Wrapper">
       {/* <SvgButton type="Email" to="https://www.google.com/" /> */}
+      <NavLink className="NavLink" type="Home" to="/" />
       <SvgButton
         className="Social__Button"
         type="FaceBook"

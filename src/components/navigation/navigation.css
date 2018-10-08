@@ -26,8 +26,6 @@
 
 .Header + p {
   font-weight: 900;
-  font-size: 1em;
-  font-style: italic;
   text-align: center;
   letter-spacing: 6px;
   color: #9eca50;

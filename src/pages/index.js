@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Navigation from '../components/navigation/Navigation';
 import Carousel from '../components/Carousel';
@@ -11,11 +12,24 @@ import blog_img from '../nav_carousel/fan.jpg';
 import './index.css';
 
 export default () => (
-  <div className="Container">
-    <Loading className="Loading" />
-    <Navigation />
-    <div className="Carousel-Container">
-      <Carousel images={[project_img, blog_img]} />
+  <PageTransition
+    defaultStyle={{
+      height: '100vh',
+      transition: '1000ms ',
+      opacity: '0',
+    }}
+    transitionStyles={{
+      entered: { opacity: '1' },
+      exiting: { opacity: '0' },
+    }}
+    transitionTime={1000}
+  >
+    <div className="Container">
+      {/* <Loading className="Loading" /> */}
+      <Navigation />
+      <div className="Carousel-Container">
+        <Carousel images={[project_img, blog_img]} />
+      </div>
     </div>
-  </div>
+  </PageTransition>
 );

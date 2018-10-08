@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 import NavLink from '../shared/NavLink';
 import Hamburger from '../shared/icons/Hamburger';
+import JTHeader from './JTHeader';
 
 import './navigation.css';
 
@@ -26,7 +27,7 @@ class Navigation extends Component {
               isOpen: !prevState.isOpen,
             })),
         });
-      },
+      }
     );
     console.log(this.state.animating);
   };
@@ -34,13 +35,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className="Nav-Container">
-        <div className="Header">
-          <span style={{ marginRight: '.35em' }}>JASON</span>
-          {/* <SvgButton className="Logo" type="Logo" to="/" /> */}
-          <span>TAYLOR</span>
-        </div>
-        <p>INTERIORS</p>
-        {/* <p>classic design, rooted in tradition, wistfully adorned.</p> */}
+        <JTHeader className="Header" />
         <div className="Nav-Menu">
           <ul className="Menu-Link-Wrapper">
             <li>

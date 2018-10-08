@@ -1,32 +1,50 @@
 import React from 'react';
+import PageTransition from 'gatsby-plugin-page-transitions';
 
-import SvgButton from '../components/shared/SvgButton';
+import NavLink from '../components/shared/NavLink';
+import JTHeader from '../components/navigation/JTHeader';
+import { Nav } from 'glamorous';
 
 export default () => (
-  <div className="Container Container--Rel">
-    <div className="About__Img__Container " />
-    <div className="About__Content ">
-      <div className="About__Logo__Container">
-        <SvgButton className="About__Logo" type="Logo" to="/" />
-        <p className="About__Logo__Text">INTERIORS</p>
-      </div>
-      <h1 className="Name">JASON TAYLOR</h1>
+  <PageTransition
+    defaultStyle={{
+      transition: '750ms',
+      height: '100vh',
+      transform: 'translateX(100%)',
+    }}
+    transitionStyles={{
+      entering: { transform: 'translateX(100%)' },
+      entered: { transform: 'translate(0%)' },
+      exiting: { transform: 'translateX(-100%)' },
+    }}
+    transitionTime={750}
+  >
+    <div className="Container Container--Rel">
+      <div className="About__Img__Container " />
+      <div className="About__Content ">
+        <div className="About__Logo__Container">
+          <NavLink className="About__Logo" type="Logo" to="/" />
+          <div className="Border__Bottom" />
+        </div>
+        <JTHeader className="Name" />
 
-      <p className="Text">
-        J.T. is known for his innovation and ability to create solutions. His designs,
-        though rooted in tradition, mean nothing without a meaningful and emotional
-        connection to his clients.
-        <br />
-        <br />
-      </p>
-      <p className="Text">
-        His unique process fosters a relationship between client and designer which
-        produces awe inspiring results. His background in construction opens pathways of
-        communication often missed, bringing to life previously unrealized visions. A
-        "playful spirt", J.T. prides himself on cultivating relationships with unique and
-        one-of-a-kind artisans from around the world. Combine that with his adventurous
-        nature and you can't help but create spaces of warmth, joy and honesty.
-      </p>
+        <p className="Text">
+          J.T. is known for his innovation and ability to create solutions. His
+          designs, though rooted in tradition, mean nothing without a meaningful
+          and emotional connection to his clients.
+          <br />
+          <br />
+        </p>
+        <p className="Text">
+          His unique process fosters a relationship between client and designer
+          which produces awe inspiring results. His background in construction
+          opens pathways of communication often missed, bringing to life
+          previously unrealized visions. A "playful spirt", J.T. prides himself
+          on cultivating relationships with unique and one-of-a-kind artisans
+          from around the world. Combine that with his adventurous nature and
+          you can't help but create spaces of warmth, joy and honesty.
+        </p>
+      </div>
     </div>
-  </div>
+  </PageTransition>
 );

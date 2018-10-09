@@ -2,8 +2,9 @@ import React from 'react';
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 import NavLink from '../components/shared/NavLink';
+import Logo from '../components/shared/icons/Logo';
 import JTHeader from '../components/navigation/JTHeader';
-import { Nav } from 'glamorous';
+// import { Nav } from 'glamorous';
 
 export default () => (
   <PageTransition
@@ -15,7 +16,6 @@ export default () => (
     transitionStyles={{
       entering: { transform: 'translateX(100%)' },
       entered: { transform: 'translate(0%)' },
-      // exiting: { transform: 'translateX(-100%)' },
     }}
     transitionTime={750}
   >
@@ -23,7 +23,7 @@ export default () => (
       <div className="About__Img__Container " />
       <div className="About__Content ">
         <div className="About__Logo__Container">
-          <NavLink className="About__Logo" type="Logo" to="/" />
+          <Logo className="About__Logo" />
           <div className="Border__Bottom" />
         </div>
         <JTHeader className="Name" />

@@ -27,7 +27,7 @@ class Navigation extends Component {
               isOpen: !prevState.isOpen,
             })),
         });
-      }
+      },
     );
     console.log(this.state.animating);
   };
@@ -39,16 +39,36 @@ class Navigation extends Component {
         <div className="Nav-Menu">
           <ul className="Menu-Link-Wrapper">
             <li>
-              <NavLink className="NavLink" type="See My Work" to="/projects" />
+              <NavLink
+                className="NavLink"
+                type="See My Work"
+                to="/projects"
+                onClick={() => this.props.onNavClick('/projects')}
+              />
             </li>
             <li>
-              <NavLink className="NavLink" type="News" to="/projects" />
+              <NavLink
+                className="NavLink"
+                type="News"
+                to="/projects"
+                onClick={() => this.props.onNavClick('/projects')}
+              />
             </li>
             <li>
-              <NavLink className="NavLink" type="About" to="/about/" />
+              <NavLink
+                className="NavLink"
+                type="About"
+                to="/about/"
+                onClick={() => this.props.onNavClick('/about')}
+              />
             </li>
             <li>
-              <NavLink className="NavLink" type="WORK WITH ME" to="/contact" />
+              <NavLink
+                className="NavLink"
+                type="WORK WITH ME"
+                to="/contact"
+                onClick={() => this.props.onNavClick('/contact')}
+              />
             </li>
           </ul>
         </div>

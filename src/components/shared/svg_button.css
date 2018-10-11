@@ -3,8 +3,8 @@
   background-image: none;
   cursor: pointer;
   height: 20px;
-  transition: all ease 0.2s;
   z-index: 300;
+  transition: all ease 0.2s;
   animation: appear 4s normal;
   animation-delay: 4s;
   animation-fill-mode: both;
@@ -25,6 +25,15 @@
   -o-transform: scale(1.6);
   -ms-transform: scale(1.6);
   transform: scale(1.6);
+}
+
+.Social__Button--Nav {
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all ease 0.2s;
+  animation: appear 4s normal;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
 .Logo {

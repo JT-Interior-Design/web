@@ -1,10 +1,9 @@
 import React from 'react';
 import PageTransition from 'gatsby-plugin-page-transitions';
+import Link from 'gatsby-link';
 
-import NavLink from '../components/shared/NavLink';
 import Logo from '../components/shared/icons/Logo';
 import JTHeader from '../components/navigation/JTHeader';
-// import { Nav } from 'glamorous';
 
 export default () => (
   <PageTransition
@@ -20,6 +19,20 @@ export default () => (
     transitionTime={750}
   >
     <div className="Container Container--Rel">
+      <div className="Nav">
+        <Link to="/" className="NavLink NavLink--Nav">
+          Home
+        </Link>
+        <Link to="/contact" className="NavLink NavLink--Nav">
+          Contact
+        </Link>
+        <Link to="/projects" className="NavLink  NavLink--Nav">
+          Projects
+        </Link>
+        <Link to="/blog" className="NavLink NavLink--Nav">
+          News
+        </Link>
+      </div>
       <div className="About__Img__Container " />
       <div className="About__Content ">
         <div className="About__Logo__Container">

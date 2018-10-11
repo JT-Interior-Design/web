@@ -29,7 +29,7 @@ const selector = type => {
     case 'Mouse':
       return <Mouse />;
     default:
-      return null;
+      return type;
   }
 };
 

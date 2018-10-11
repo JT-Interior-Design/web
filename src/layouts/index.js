@@ -8,7 +8,6 @@ import './index.css';
 export default ({ children }) => (
   <div className="Background__Wrapper">
     <header className="Social__Wrapper">
-      {/* <SvgButton type="Email" to="https://www.google.com/" /> */}
       <Link className="NavLink" to="/">
         Home
       </Link>

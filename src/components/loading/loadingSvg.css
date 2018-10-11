@@ -24,7 +24,7 @@
 
 .Svg__Animate {
   stroke-dasharray: 1000;
-  animation: dash 4s linear alternate;
+  animation: dash 5s linear alternate;
 }
 
 .Fill_Brown {
@@ -38,10 +38,6 @@
 .Fill__Black {
   animation-name: fill_black;
 }
-
-/* .slow {
-    animation: dash 22s linear alternate;
-  } */
 
 @keyframes dash {
   from {

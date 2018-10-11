@@ -1,4 +1,4 @@
-.Nav-Container {
+.Nav__Container {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -34,34 +34,34 @@
   margin-top: -0.5em;
 }
 
-.Nav-Menu {
+.Nav__Menu {
   flex-grow: 1;
   display: flex;
   align-items: center;
 }
 
-.Nav-Menu-Header {
+.Nav__Menu__Header {
   width: 60%;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
 }
 
-.Menu-Link-Wrapper {
+.Menu__Link__Wrapper {
   margin: 0 auto;
 }
 
-.Menu-Link-Wrapper li {
+.Menu__Link__Wrapper li {
   list-style-type: none;
   text-align: center;
   margin: 0;
 }
 
-.Menu-Link-Wrapper:hover .NavLink:not(:hover) {
+.Menu__Link__Wrapper:hover .NavLink:not(:hover) {
   transform: scale(0.9);
 }
 
-.Menu-Link-Wrapper li:not(:last-child) {
+.Menu__Link__Wrapper li:not(:last-child) {
   margin-bottom: 30px;
 }
 

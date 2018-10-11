@@ -56,6 +56,11 @@ export default class extends React.Component {
   };
 
   render() {
+    let loading = false;
+    if (!sessionStorage.getItem('loading')) {
+      loading = true;
+      sessionStorage.setItem('loading', 'loading');
+    }
     return (
       <PageTransition
         defaultStyle={{
@@ -67,7 +72,7 @@ export default class extends React.Component {
         transitionTime={1000}
       >
         <div className="Container">
-          {/* <Loading className="Loading" /> */}
+          {loading ? <Loading className="Loading" /> : null}
           <Navigation onNavClick={this.handleNavClick} />
           <div className="Carousel-Container">
             <Carousel images={[project_img, blog_img]} />

@@ -34,7 +34,7 @@ export default class extends React.PureComponent {
           flexDirection="column"
           height="88%"
         >
-          <div className="Nav Nav--contact">
+          <div className="Nav">
             <Link to="/" className="NavLink NavLink--Nav">
               Home
             </Link>

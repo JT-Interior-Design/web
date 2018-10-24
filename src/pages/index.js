@@ -49,6 +49,15 @@ export default class extends React.Component {
           entered: { transform: 'translate(0%)' },
         };
         break;
+      case '/projects':
+        defaultStyles = {
+          transform: 'translateY(-100%)',
+        };
+        transitionStyles = {
+          entering: { transform: 'translateY(-100%)' },
+          entered: { transform: 'translate(0%)' },
+        };
+        break;
       default:
         return;
     }
@@ -56,6 +65,10 @@ export default class extends React.Component {
   };
 
   render() {
+    const images = this.props.data.allFile.edges.map(
+      ({ node: { publicURL } }) => publicURL,
+    );
+    // console.log(images);
     let loading = false;
     if (!sessionStorage.getItem('loading')) {
       loading = true;
@@ -75,10 +88,28 @@ export default class extends React.Component {
           {loading ? <Loading className="Loading" /> : null}
           <Navigation onNavClick={this.handleNavClick} />
           <div className="Carousel-Container">
-            <Carousel images={[project_img, blog_img]} />
+            <Carousel images={images} />
           </div>
         </div>
       </PageTransition>
     );
   }
 }
+
+export const query = graphql`
+  query CAROUSEL_QUERY {
+    allFile(
+      filter: {
+        extension: { eq: "jpg" }
+        sourceInstanceName: { eq: "carousel" }
+      }
+    ) {
+      edges {
+        node {
+          relativePath
+          publicURL
+        }
+      }
+    }
+  }
+`;

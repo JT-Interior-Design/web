@@ -101,3 +101,13 @@
 .NavLink:hover::after {
   transform: translateX(0);
 }
+
+.NavLink--Nav {
+  margin-right: 15px;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: none;
+  animation: appear 4s normal;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}

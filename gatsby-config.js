@@ -13,5 +13,27 @@ module.exports = {
       },
     },
     'gatsby-plugin-glamor',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'img',
+        path: `${__dirname}/src/projects/images/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'carousel',
+        path: `${__dirname}/src/nav_carousel/`,
+      },
+    },
+    'gatsby-transformer-remark',
   ],
 };

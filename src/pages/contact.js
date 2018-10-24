@@ -21,7 +21,7 @@ export default class extends React.PureComponent {
         }}
         transitionStyles={{
           entering: { transform: 'translateY(100%)' },
-          entered: { transform: 'translate(0%)' },
+          entered: { transform: 'none' },
         }}
         transitionTime={500}
       >

@@ -14,7 +14,7 @@ export default () => (
     }}
     transitionStyles={{
       entering: { transform: 'translateX(100%)' },
-      entered: { transform: 'translate(0%)' },
+      entered: { transform: 'none' },
     }}
     transitionTime={750}
   >

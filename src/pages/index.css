@@ -14,13 +14,14 @@
 }
 
 .Nav {
-  position: relative;
-  top: -5%;
+  position: fixed;
+  top: 15px;
+  left: 33px;
 }
 
 .Nav--contact {
-  top: -11.4%;
-  left: -2.2%;
+  /* top: -11.4%;
+  left: -2.2%; */
 }
 
 .Carousel-Container {

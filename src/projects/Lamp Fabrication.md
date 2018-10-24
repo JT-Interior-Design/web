@@ -2,6 +2,7 @@
 path: 'lamp-fabrication'
 images: ['Lamp Fabrication']
 title: 'Lamp Fabrication'
+category: 'Custom Fabrication'
 ---
 
 ## Lamp Fabrication

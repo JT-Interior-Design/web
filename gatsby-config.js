@@ -34,5 +34,6 @@ module.exports = {
         path: `${__dirname}/src/nav_carousel/`,
       },
     },
+    'gatsby-transformer-remark',
   ],
 };

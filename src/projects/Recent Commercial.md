@@ -2,6 +2,7 @@
 path: 'recent-commercial'
 images: ['Recent Commercial']
 title: 'Recent Commercial'
+category: 'Commercial'
 ---
 
 ## Recent Commercial

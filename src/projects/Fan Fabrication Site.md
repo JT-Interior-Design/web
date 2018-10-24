@@ -2,6 +2,7 @@
 path: 'bathroom-revival'
 images: ['Bathroom Revival']
 title: 'Bathroom Revival'
+category: 'Fabrication'
 ---
 
 ## Bathroom Revival

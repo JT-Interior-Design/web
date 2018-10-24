@@ -49,6 +49,15 @@ export default class extends React.Component {
           entered: { transform: 'translate(0%)' },
         };
         break;
+      case '/projects':
+        defaultStyles = {
+          transform: 'translateY(-100%)',
+        };
+        transitionStyles = {
+          entering: { transform: 'translateY(-100%)' },
+          entered: { transform: 'translate(0%)' },
+        };
+        break;
       default:
         return;
     }

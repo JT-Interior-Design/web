@@ -1,5 +1,6 @@
 import React from 'react';
 import g from 'glamorous';
+import Link from 'gatsby-link';
 import './index.css';
 
 export default class Projects extends React.PureComponent {
@@ -52,7 +53,7 @@ export default class Projects extends React.PureComponent {
           </g.Div>
           <g.Div
             flex={1}
-            overflow="scroll"
+            overflowY="scroll"
             display="grid"
             gridTemplateColumns="repeat(auto-fill, 450px)"
             gridGap={15}
@@ -62,6 +63,7 @@ export default class Projects extends React.PureComponent {
             {data.allCosmicjsProjects.edges.map(
               ({
                 node: {
+                  slug,
                   metadata: {
                     hero: { imgix_url },
                     category,
@@ -78,11 +80,12 @@ export default class Projects extends React.PureComponent {
                       objectFit="cover"
                       src={imgix_url}
                       alt={title}
-                      key={title}
                     />
-                    <div className="Projects__overlay">
-                      <span>{title}</span>
-                    </div>
+                    <Link to={`/projects/${slug}`} key={title}>
+                      <div className="Projects__overlay">
+                        <span>{title}</span>
+                      </div>
+                    </Link>
                   </div>
                 ),
             )}

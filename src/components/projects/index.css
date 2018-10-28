@@ -76,3 +76,7 @@
   outline: none;
 }
 
+.Projects__image-wrapper a {
+  text-shadow: none;
+  background-image: none;
+}

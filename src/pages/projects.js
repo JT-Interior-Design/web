@@ -1,11 +1,18 @@
 import React from 'react';
-import g, { Sub } from 'glamorous';
+import g from 'glamorous';
 import PageTransition from 'gatsby-plugin-page-transitions';
+
 
 import Projects from '../components/projects';
 import SubNav from '../components/navigation/subNav';
+import { preventDefault } from '../components/Carousel';
 
 export default ({ data }) => {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = null; // modern standard
+  window.onmousewheel = document.onmousewheel = null; // older browsers, IE
+  window.ontouchmove = null; // mobile
+  document.onkeydown = null;
   return (
     <PageTransition
       defaultStyle={{

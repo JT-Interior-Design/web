@@ -35,5 +35,16 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-cosmicjs',
+      options: {
+        bucketSlug: 'jt-interior-design',
+        objectTypes: ['projects'],
+        apiKeys: {
+          readKey: ''
+        }
+      }
+    }
   ],
 };

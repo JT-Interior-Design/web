@@ -98,6 +98,7 @@ export const query = graphql`
         extension: { eq: "jpg" }
         sourceInstanceName: { eq: "carousel" }
       }
+      sort: { fields: [name], order: ASC }
     ) {
       edges {
         node {

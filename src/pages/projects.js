@@ -28,7 +28,6 @@ export default ({ data }) => {
       <g.Div
         backgroundColor="rgba(255, 255, 255, 0.8)"
         flex={1}
-        padding="30px"
         margin={20}
         display="flex"
         flexDirection="column"

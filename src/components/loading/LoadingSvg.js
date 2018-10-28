@@ -280,6 +280,38 @@ const LoadingSvg = props => (
 					c-14.3,9.5-27.8,15.9-27,31.8C675,398.1,680.6,406.8,680.6,406.8z"
             />
           </g>
+          <g>
+            <rect
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
+              x="583.8"
+              y="339.5"
+              width="14.8"
+              height="14.8"
+            />
+            <rect
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
+              x="607.1"
+              y="339.5"
+              width="14.8"
+              height="14.8"
+            />
+            <rect
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
+              x="583.8"
+              y="360.7"
+              class="st0"
+              width="14.8"
+              height="14.8"
+            />
+            <rect
+              className="Logo__Antlers__Body Svg__Animate Fill_Brown"
+              x="607.1"
+              y="360.7"
+              class="st0"
+              width="14.8"
+              height="14.8"
+            />
+          </g>
         </g>
         <path
           className="Logo__Antlers__Body Svg__Animate Fill_Brown"

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 const SubNav = ({ navLinks }) => (
-  <div>
+  <div className="Nav">
     {navLinks.map((link, index) => {
       return (
         <Link

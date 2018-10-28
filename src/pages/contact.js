@@ -1,7 +1,6 @@
 import React from 'react';
 import g from 'glamorous';
 import PageTransition from 'gatsby-plugin-page-transitions';
-import Link from 'gatsby-link';
 
 import ContactSidebar from '../components/contact/ContactSidebar';
 import ContactMain from '../components/contact/ContactMain';

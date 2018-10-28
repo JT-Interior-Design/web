@@ -1,7 +1,6 @@
 import React from 'react';
 import g, { Sub } from 'glamorous';
 import PageTransition from 'gatsby-plugin-page-transitions';
-import Link from 'gatsby-link';
 
 import Projects from '../components/projects';
 import SubNav from '../components/navigation/subNav';

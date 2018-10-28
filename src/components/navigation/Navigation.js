@@ -31,7 +31,7 @@ const Navigation = ({ onNavClick }) => {
             <NavLink
               className="NavLink"
               type="About"
-              to="/about/"
+              to="/about"
               onClick={() => onNavClick('/about')}
             />
           </li>

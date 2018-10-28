@@ -1,7 +1,7 @@
 .Container {
   display: flex;
   flex-grow: 1;
-  width: 95%;
+  width: 97.5%;
   height: 88%;
   margin: 18px auto;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
@@ -12,12 +12,6 @@
 .Container--Rel {
   position: relative;
 }
-
-/* .Nav {
-  position: fixed;
-  top: 15px;
-  left: 33px;
-} */
 
 .Carousel-Container {
   width: 50%;

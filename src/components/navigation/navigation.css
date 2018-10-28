@@ -111,3 +111,9 @@
   animation-delay: 1s;
   animation-fill-mode: both;
 }
+
+.NavLink--Pos {
+  position: relative;
+  top: -35px;
+  left: 0;
+}

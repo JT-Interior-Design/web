@@ -1,9 +1,10 @@
 import React from 'react';
-import g from 'glamorous';
+import g, { Sub } from 'glamorous';
 import PageTransition from 'gatsby-plugin-page-transitions';
 import Link from 'gatsby-link';
 
 import Projects from '../components/projects';
+import SubNav from '../components/navigation/subNav';
 
 export default ({ data }) => {
   return (
@@ -28,20 +29,7 @@ export default ({ data }) => {
         flexDirection="column"
         height="88%"
       >
-        <div className="Nav">
-          <Link to="/" className="NavLink NavLink--Nav">
-            Home
-          </Link>
-          <Link to="/about" className="NavLink NavLink--Nav">
-            About
-          </Link>
-          <Link to="/contact" className="NavLink  NavLink--Nav">
-            Contact
-          </Link>
-          <Link to="/blog" className="NavLink NavLink--Nav">
-            News
-          </Link>
-        </div>
+        <SubNav navLinks={['Home', 'Contact', 'About', 'News']} />
         <Projects data={data} />
       </g.Div>
     </PageTransition>

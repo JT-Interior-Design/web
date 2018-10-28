@@ -28,7 +28,6 @@ export default class extends React.Component {
   };
 
   handleNavClick = to => {
-    console.log(to);
     let defaultStyles, transitionStyles;
     switch (to) {
       case '/about':
@@ -66,7 +65,7 @@ export default class extends React.Component {
 
   render() {
     const images = this.props.data.allFile.edges.map(
-      ({ node: { publicURL } }) => publicURL,
+      ({ node: { publicURL } }) => publicURL
     );
     // console.log(images);
     let loading = false;

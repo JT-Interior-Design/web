@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 
 import Logo from '../components/shared/icons/Logo';
 import JTHeader from '../components/navigation/JTHeader';
+import SubNav from '../components/navigation/subNav';
 
 export default () => (
   <PageTransition
@@ -19,7 +20,8 @@ export default () => (
     transitionTime={750}
   >
     <div className="Container Container--Rel">
-      <div className="Nav">
+      <SubNav navLinks={['Home', 'Contact', 'Projects', 'News']} />
+      {/* <div className="Nav">
         <Link to="/" className="NavLink NavLink--Nav">
           Home
         </Link>
@@ -32,7 +34,7 @@ export default () => (
         <Link to="/blog" className="NavLink NavLink--Nav">
           News
         </Link>
-      </div>
+      </div> */}
       <div className="About__Img__Container " />
       <div className="About__Content ">
         <div className="About__Logo__Container">

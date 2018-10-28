@@ -1,0 +1,78 @@
+.Projects__image-wrapper {
+  position: relative;
+  cursor: pointer
+}
+
+.Projects__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s;
+}
+
+.Projects__overlay span {
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  border: 1px solid #fff;
+  transform: scale(0);
+  transition: all .4s .1s;
+}
+
+.Projects__image-wrapper:hover .Projects__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Projects__image-wrapper:hover .Projects__overlay span {
+  transform: scale(1);
+}
+
+.Projects__sidebar button {
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  transition: all .3s;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  position: relative;
+}
+
+.Projects__sidebar button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 100%;
+  background-color: #9eca50;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.Projects__sidebar button.active::after {
+  opacity: 1;
+}
+
+.Projects__sidebar button:hover {
+  background-color: #dedede;
+}
+
+.Projects__sidebar button:active,
+.Projects__sidebar button:focus {
+  outline: none;
+}
+

@@ -2,7 +2,6 @@ import React from 'react';
 import g from 'glamorous';
 import PageTransition from 'gatsby-plugin-page-transitions';
 
-
 import Projects from '../components/projects';
 import SubNav from '../components/navigation/subNav';
 import { preventDefault } from '../components/Carousel';
@@ -43,26 +42,24 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query MD_QUERY {
-    allMarkdownRemark {
+  query COSMIC_QUERY {
+    allCosmicjsProjects {
       edges {
         node {
-          frontmatter {
-            images
-            path
-            title
+          slug
+          title
+          content
+          metadata {
+            images {
+              image {
+                imgix_url
+              }
+            }
+            hero {
+              imgix_url
+            }
             category
           }
-        }
-      }
-    }
-    allFile(
-      filter: { extension: { eq: "jpg" }, sourceInstanceName: { eq: "img" } }
-    ) {
-      edges {
-        node {
-          publicURL
-          name
         }
       }
     }

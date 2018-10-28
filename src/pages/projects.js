@@ -17,10 +17,10 @@ export default ({ data }) => {
       defaultStyle={{
         transition: '500ms',
         height: '100vh',
-        transform: 'translateY(100%)',
+        transform: 'translateY(-100%)',
       }}
       transitionStyles={{
-        entering: { transform: 'translateY(100%)' },
+        entering: { transform: 'translateY(-100%)' },
         entered: { transform: 'none' },
       }}
       transitionTime={500}
@@ -33,6 +33,7 @@ export default ({ data }) => {
         display="flex"
         flexDirection="column"
         height="88%"
+        borderRadius={4}
       >
         <SubNav navLinks={['Home', 'Contact', 'About', 'News']} />
         <Projects data={data} />

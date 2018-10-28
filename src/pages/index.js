@@ -5,10 +5,6 @@ import { navigateTo } from 'gatsby-link';
 import Navigation from '../components/navigation/Navigation';
 import Carousel from '../components/Carousel';
 import Loading from '../components/loading/Loading';
-import project_img from '../nav_carousel/projects.jpg';
-import blog_img from '../nav_carousel/fan.jpg';
-// import about_img from '../nav_carousel/deer.jpg';
-// import contact_img from '../nav_carousel/bedroom.jpg';
 
 import './index.css';
 
@@ -50,10 +46,10 @@ export default class extends React.Component {
         break;
       case '/projects':
         defaultStyles = {
-          transform: 'translateY(-100%)',
+          transform: 'translateY(100%)',
         };
         transitionStyles = {
-          entering: { transform: 'translateY(-100%)' },
+          entering: { transform: 'translateY(100%)' },
           entered: { transform: 'translate(0%)' },
         };
         break;
@@ -65,7 +61,7 @@ export default class extends React.Component {
 
   render() {
     const images = this.props.data.allFile.edges.map(
-      ({ node: { publicURL } }) => publicURL
+      ({ node: { publicURL } }) => publicURL,
     );
     // console.log(images);
     let loading = false;

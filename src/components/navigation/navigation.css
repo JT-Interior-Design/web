@@ -1,8 +1,9 @@
 .Nav__Container {
   display: flex;
   flex-direction: column;
-  width: 50%;
   position: relative;
+  flex-shrink: 0;
+  padding: 30px;
 }
 
 .Header {
@@ -12,7 +13,7 @@
   margin-top: 3em;
   font-weight: bold;
   letter-spacing: 2.5px;
-  margin-left: 0.75em;
+  text-align: center;
 }
 
 .Header span {
@@ -30,7 +31,7 @@
   letter-spacing: 6px;
   color: #9eca50;
   margin: 0;
-  font-size: 1.75em;
+  font-size: 1.3em;
   margin-top: -0.5em;
 }
 

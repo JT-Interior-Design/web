@@ -33,6 +33,7 @@ export default class extends React.PureComponent {
           display="flex"
           flexDirection="column"
           height="88%"
+          borderRadius={4}
         >
           <SubNav navLinks={['Home', 'Projects', 'About', 'News']} />
 

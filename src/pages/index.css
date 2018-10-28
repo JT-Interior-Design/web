@@ -4,9 +4,9 @@
   width: 97.5%;
   height: 88%;
   margin: 18px auto;
-  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
-    4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
 }
 
 .Container--Rel {
@@ -14,7 +14,7 @@
 }
 
 .Carousel-Container {
-  width: 50%;
+  flex-grow: 1;
 }
 
 .About__Img__Container {

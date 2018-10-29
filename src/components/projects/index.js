@@ -22,20 +22,20 @@ export default class Projects extends React.PureComponent {
     );
 
     categories = Array.from(new Set(categories));
-    // data.allCosmicjsProjects.edges = data.allCosmicjsProjects.edges.reduce(
-    //   (acc, element) => [
-    //     ...acc,
-    //     element,
-    //     element,
-    //     element,
-    //     element,
-    //     element,
-    //     element,
-    //     element,
-    //     element,
-    //   ],
-    //   [],
-    // );
+    /* data.allCosmicjsProjects.edges = data.allCosmicjsProjects.edges.reduce(
+      (acc, element) => [
+        ...acc,
+        element,
+        element,
+        element,
+        element,
+        element,
+        element,
+        element,
+        element,
+      ],
+      [],
+    ); */
     console.log(data);
     return (
       <g.Div height="100%" display="flex" flexDirection="column">

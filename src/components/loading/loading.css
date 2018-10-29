@@ -15,6 +15,9 @@
   animation: fade 1.5s normal;
   animation-delay: 5.25s;
   animation-fill-mode: forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes fade {

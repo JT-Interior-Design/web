@@ -1,7 +1,9 @@
 .Loading__Svg {
-  width: 40em;
-  margin-top: 2em;
-  margin-left: 15em;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  /* margin-top: 2em;
+  margin-left: 15em; */
 }
 
 .Logo__Antlers__Body {

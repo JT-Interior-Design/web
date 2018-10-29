@@ -53,6 +53,15 @@ export default class extends React.Component {
           entered: { transform: 'translate(0%)' },
         };
         break;
+      case '/news':
+        defaultStyles = {
+          transform: 'translateX(100%)',
+        };
+        transitionStyles = {
+          entering: { transform: 'translateX(100%)' },
+          entered: { transform: 'translate(0%)' },
+        };
+        break;
       default:
         return;
     }

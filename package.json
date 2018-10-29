@@ -25,6 +25,7 @@
     "glamorous": "^4.13.1",
     "gsap": "^2.0.2",
     "lodash": "^4.17.10",
+    "moment": "^2.22.2",
     "typography-theme-fairy-gates": "^0.15.11"
   }
 }

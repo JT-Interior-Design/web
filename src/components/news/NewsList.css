@@ -1,0 +1,38 @@
+.NewsList {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.NewsList h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.NewsList ul {
+  list-style: none;
+  margin: 0;
+}
+
+.NewsList__item {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+  transform-origin: left;
+  transition: all .5s;
+  width: 85%;
+}
+
+.NewsList__item:hover {
+  transform: scale(1.15);
+  background-color: #eee;
+}
+
+.NewsList__item-title {
+  font-size: 1.4rem;
+}
+
+.NewsList__createdAt {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 20px;
+}

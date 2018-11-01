@@ -15,10 +15,12 @@
 }
 
 .Project__Jumbo {
-  height: 500px;
+  height: 650px;
   width: 100%;
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .Project__Img__grid {

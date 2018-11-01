@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './nav_link.css';
-
 const NavButton = ({ type, to, className, onClick }) => (
   <a
     href={to}

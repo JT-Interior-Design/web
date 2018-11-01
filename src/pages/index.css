@@ -18,7 +18,7 @@
 }
 
 .About__Img__Container {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 70%;
@@ -50,7 +50,6 @@
 }
 
 .About__Content {
-  position: absolute;
   top: 0;
   right: 0;
   background-color: white;

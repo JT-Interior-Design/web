@@ -18,7 +18,7 @@ export default () => (
     }}
     transitionTime={750}
   >
-    <div className="Container Container--Rel">
+    <div className="Container">
       <SubNav navLinks={['Home', 'Contact', 'Projects', 'News']} />
 
       <div className="About__Img__Container " />

@@ -2,12 +2,11 @@
   flex-grow: 1;
   width: 97.5%;
   height: 88vh;
-  margin: 10px auto;
-  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
-    4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+  margin: 20px auto;
   background-color: rgba(255, 255, 255, 0.8);
   overflow-y: scroll;
   padding: 80px;
+  border-radius: 4px;
 }
 
 .Project__container h1 {
@@ -15,10 +14,22 @@
   margin-bottom: 20px;
 }
 
-.Project__container img {
+.Project__Jumbo {
   height: 500px;
-  width: auto;
+  width: 100%;
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+}
+
+.Project__Img__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 1;
+  grid-gap: 3px;
+}
+
+.Project__Img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }

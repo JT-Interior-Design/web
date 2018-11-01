@@ -1,15 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {
-  Email,
-  FaceBook,
-  Instagram,
-  Twitter,
-  Pinterest,
-  Logo,
-  Mouse,
-} from './icons';
+import { Email, FaceBook, Instagram, Twitter, Pinterest, Mouse } from './icons';
 
 import './svg_button.css';
 

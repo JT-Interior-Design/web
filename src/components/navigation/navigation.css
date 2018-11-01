@@ -120,7 +120,7 @@
 } */
 
 .Nav {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 33px;
 }

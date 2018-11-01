@@ -14,7 +14,7 @@ const Navigation = ({ onNavClick }) => {
           <li>
             <NavLink
               className="NavLink"
-              type="See My Work"
+              type="My Work"
               to="/projects"
               onClick={() => onNavClick('/projects')}
             />
@@ -22,7 +22,7 @@ const Navigation = ({ onNavClick }) => {
           <li>
             <NavLink
               className="NavLink"
-              type="News"
+              type="Blog"
               to="/projects"
               onClick={() => onNavClick('/news')}
             />
@@ -38,7 +38,7 @@ const Navigation = ({ onNavClick }) => {
           <li>
             <NavLink
               className="NavLink"
-              type="WORK WITH ME"
+              type="Contact"
               to="/contact"
               onClick={() => onNavClick('/contact')}
             />

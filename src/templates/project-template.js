@@ -20,11 +20,18 @@ export default ({ data }) => {
     <div className="Project__container">
       <SubNav navLinks={['Home', 'Projects', 'Contact', 'About', 'News']} />
       <h1>{title}</h1>
-      <img src={imgix_url} alt={title} />
+      <img className="Project__Jumbo" src={imgix_url} alt={title} />
       <div dangerouslySetInnerHTML={{ __html: content }} />
-      <div>
+      <div className="Project__Img__grid">
         {images.map(({ image }, i) => (
-          <img key={i} src={image.imgix_url} alt={title} />
+          <div style={{ width: '100%' }}>
+            <img
+              className="Project__Img"
+              key={i}
+              src={image.imgix_url}
+              alt={title}
+            />
+          </div>
         ))}
       </div>
     </div>

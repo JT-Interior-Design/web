@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import g from 'glamorous';
 
-// import './navigation.css';
-
 export default ({ className }) => (
   <div>
     <div className={`${className}`}>

@@ -18,25 +18,16 @@ export default class Projects extends React.PureComponent {
         node: {
           metadata: { category },
         },
-      }) => category,
+      }) => category
     );
 
     categories = Array.from(new Set(categories));
-    /* data.allCosmicjsProjects.edges = data.allCosmicjsProjects.edges.reduce(
-      (acc, element) => [
-        ...acc,
-        element,
-        element,
-        element,
-        element,
-        element,
-        element,
-        element,
-        element,
-      ],
-      [],
-    ); */
-    console.log(data);
+
+    // data.allCosmicjsProjects.edges = data.allCosmicjsProjects.edges.reduce(
+    //   (acc, element) => [...acc, element, element, element, element],
+    //   []
+    // );
+
     return (
       <g.Div height="100%" display="flex" flexDirection="column">
         <g.Div display="flex" flex={1}>
@@ -70,7 +61,7 @@ export default class Projects extends React.PureComponent {
             flex={1}
             overflowY="scroll"
             display="grid"
-            gridTemplateColumns="repeat(auto-fill, calc(33.367% - 1px))"
+            gridTemplateColumns="repeat(auto-fill, calc(33.3% - 1px))"
             gridGap={1}
             padding={1}
             gridAutoRows={250}
@@ -103,7 +94,7 @@ export default class Projects extends React.PureComponent {
                       </div>
                     </Link>
                   </div>
-                ),
+                )
             )}
           </g.Div>
         </g.Div>

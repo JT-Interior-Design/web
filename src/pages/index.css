@@ -37,6 +37,12 @@
   padding-bottom: 0.5em;
 }
 
+.About__Logo__Container--Pos {
+  margin-top: 20px;
+  left: 15%;
+  position: relative;
+}
+
 .Border__Bottom {
   border-bottom: 2px solid #9eca50;
   position: absolute;
@@ -47,6 +53,10 @@
 
 .About__Logo {
   background-image: none;
+}
+
+.About__Logo--Size {
+  width: 100px;
 }
 
 .About__Content {
@@ -81,7 +91,6 @@
   font-size: 1em;
   text-align: center;
   margin-left: 8.5em;
-  letter-spacing: 6px;
   color: #9eca50;
   margin-top: -0.75em;
 }
@@ -94,7 +103,7 @@
   font-size: 16px;
   margin: 0;
   text-indent: 1em;
-  text-align: justify;
+  letter-spacing: 1px;
 }
 
 .Text--Size {

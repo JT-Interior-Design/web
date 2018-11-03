@@ -5,6 +5,7 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 import Projects from '../components/projects';
 import SubNav from '../components/navigation/subNav';
 import { preventDefault } from '../components/Carousel';
+import { TRANSITION_TIME } from '../GLOBALS';
 
 export default ({ data }) => {
   window.removeEventListener('DOMMouseScroll', preventDefault, false);
@@ -15,7 +16,7 @@ export default ({ data }) => {
   return (
     <PageTransition
       defaultStyle={{
-        transition: '500ms',
+        transition: `${TRANSITION_TIME}ms`,
         height: '100vh',
         transform: 'translateY(-100%)',
       }}
@@ -23,7 +24,7 @@ export default ({ data }) => {
         entering: { transform: 'translateY(-100%)' },
         entered: { transform: 'none' },
       }}
-      transitionTime={500}
+      transitionTime={TRANSITION_TIME}
     >
       <g.Div
         backgroundColor="rgba(255, 255, 255, 0.8)"

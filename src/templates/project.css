@@ -23,15 +23,19 @@
   object-fit: cover;
 }
 
-.Project__Img__grid {
+/* .Project__Img__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column: span 1;
   grid-gap: 3px;
-}
+} */
 
 .Project__Img {
   width: 100%;
+  height: auto;
   display: block;
+}
+
+.Project__brick {
   margin: 0 auto;
 }

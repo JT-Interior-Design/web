@@ -5,6 +5,7 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 import ContactSidebar from '../components/contact/ContactSidebar';
 import ContactMain from '../components/contact/ContactMain';
 import SubNav from '../components/navigation/subNav';
+import TRANSITION_TIME from '../GLOBALS';
 
 export default class extends React.PureComponent {
   state = { selected: 0 };
@@ -15,7 +16,7 @@ export default class extends React.PureComponent {
     return (
       <PageTransition
         defaultStyle={{
-          transition: '500ms',
+          transition: '750ms',
           height: '100vh',
           transform: 'translateY(100%)',
         }}
@@ -23,7 +24,7 @@ export default class extends React.PureComponent {
           entering: { transform: 'translateY(100%)' },
           entered: { transform: 'none' },
         }}
-        transitionTime={500}
+        transitionTime={750}
       >
         <g.Div
           backgroundColor="rgba(255, 255, 255, 0.8)"

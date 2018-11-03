@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 1px;
 }
 
 body {
@@ -15,6 +16,11 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-family: 'PT Serif', serif;
+}
+
+img {
+  object-fit: cover;
+  image-rendering: pixelated;
 }
 
 .Background__Wrapper {

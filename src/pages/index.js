@@ -5,6 +5,7 @@ import { navigateTo } from 'gatsby-link';
 import Navigation from '../components/navigation/Navigation';
 import Carousel from '../components/Carousel';
 import Loading from '../components/loading/Loading';
+import { TRANSITION_TIME } from '../GLOBALS';
 
 import './index.css';
 
@@ -70,7 +71,7 @@ export default class extends React.Component {
 
   render() {
     const images = this.props.data.allFile.edges.map(
-      ({ node: { publicURL } }) => publicURL,
+      ({ node: { publicURL } }) => publicURL
     );
     // console.log(images);
     let loading = false;
@@ -82,11 +83,11 @@ export default class extends React.Component {
       <PageTransition
         defaultStyle={{
           height: '100vh',
-          transition: '500ms ',
+          transition: `${TRANSITION_TIME}ms`,
           ...this.state.defaultStyles,
         }}
         transitionStyles={this.state.transitionStyles}
-        transitionTime={1000}
+        transitionTime={TRANSITION_TIME}
       >
         <div className="Container">
           {loading ? <Loading className="Loading" /> : null}

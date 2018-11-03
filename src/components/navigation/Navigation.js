@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 import NavLink from '../shared/NavLink';
 import JTHeader from './JTHeader';
+import Logo from '../shared/icons/Logo';
 
 import './navigation.css';
 
@@ -9,12 +10,15 @@ const Navigation = ({ onNavClick }) => {
   return (
     <div className="Nav__Container">
       <JTHeader className="Header" />
+      {/* <div className="About__Logo__Container About__Logo__Container--Pos">
+        <Logo className="About__Logo About__Logo--Size" />
+      </div> */}
       <div className="Nav__Menu">
         <ul className="Menu__Link__Wrapper">
           <li>
             <NavLink
               className="NavLink"
-              type="My Work"
+              type="Portfolio"
               to="/projects"
               onClick={() => onNavClick('/projects')}
             />
@@ -22,7 +26,7 @@ const Navigation = ({ onNavClick }) => {
           <li>
             <NavLink
               className="NavLink"
-              type="Blog"
+              type="Seeds of Inspiration"
               to="/projects"
               onClick={() => onNavClick('/news')}
             />
@@ -38,7 +42,7 @@ const Navigation = ({ onNavClick }) => {
           <li>
             <NavLink
               className="NavLink"
-              type="Contact"
+              type="Connect With Us"
               to="/contact"
               onClick={() => onNavClick('/contact')}
             />

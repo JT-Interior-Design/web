@@ -7,7 +7,7 @@ const SubNav = ({ navLinks }) => (
       return (
         <Link
           to={link === 'Home' ? '/' : `/${link.toLowerCase()}`}
-          className="NavLink NavLink--Nav NavLink--Pos"
+          className="NavLink NavLink--Nav"
           key={index}
         >
           {link}

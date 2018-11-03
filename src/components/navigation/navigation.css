@@ -41,6 +41,12 @@
   align-items: center;
 }
 
+.Nav__Logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
 .Nav__Menu__Header {
   width: 60%;
   text-align: center;
@@ -56,6 +62,7 @@
   list-style-type: none;
   text-align: center;
   margin: 0;
+  letter-spacing: 2.5px;
 }
 
 .Menu__Link__Wrapper:hover .NavLink:not(:hover) {
@@ -69,7 +76,7 @@
 .NavLink {
   background-image: none;
   color: #424242;
-  font-size: 20px;
+  font-size: 1rem;
   position: relative;
   font-style: italic;
   text-shadow: none;
@@ -78,6 +85,7 @@
   overflow: hidden;
   transition: all 0.3s;
   backface-visibility: hidden;
+  letter-spacing: 2px;
 }
 
 .NavLink::after {
@@ -111,13 +119,8 @@
   animation: appear 4s normal;
   animation-delay: 1s;
   animation-fill-mode: both;
+  letter-spacing: 1px;
 }
-
-/* .NavLink--Pos {
-  position: relative;
-  top: -35px;
-  left: 0;
-} */
 
 .Nav {
   position: absolute;

@@ -70,10 +70,10 @@ export default class extends React.Component {
   };
 
   render() {
-    const images = this.props.data.allFile.edges.map(
-      ({ node: { publicURL } }) => publicURL
+    const images = this.props.data.cosmicjsCarousels.metadata.images.map(
+      ({ image: { imgix_url } }) => imgix_url,
     );
-    // console.log(images);
+    console.log(images);
     let loading = false;
     if (!sessionStorage.getItem('loading')) {
       loading = true;
@@ -103,17 +103,12 @@ export default class extends React.Component {
 
 export const query = graphql`
   query CAROUSEL_QUERY {
-    allFile(
-      filter: {
-        extension: { eq: "jpg" }
-        sourceInstanceName: { eq: "carousel" }
-      }
-      sort: { fields: [name], order: ASC }
-    ) {
-      edges {
-        node {
-          relativePath
-          publicURL
+    cosmicjsCarousels(title: { eq: "Nav-Carosuels" }) {
+      metadata {
+        images {
+          image {
+            imgix_url
+          }
         }
       }
     }

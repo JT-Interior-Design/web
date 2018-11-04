@@ -40,7 +40,7 @@ module.exports = {
       resolve: 'gatsby-source-cosmicjs',
       options: {
         bucketSlug: 'jt-interior-design',
-        objectTypes: ['news', 'projects'],
+        objectTypes: ['news', 'projects', 'carousels'],
         apiKeys: {
           readKey: '',
         },

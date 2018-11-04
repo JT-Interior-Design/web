@@ -22,6 +22,10 @@ export default class Project extends React.Component {
     this.instance.resize(true).pack();
   }
 
+  componentDidUpdate() {
+    this.instance && this.instance.resize(true).pack();
+  }
+
   render() {
     const { data } = this.props;
 

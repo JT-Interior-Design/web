@@ -17,7 +17,7 @@ export default class extends React.PureComponent {
       <PageTransition
         defaultStyle={{
           transition: '750ms',
-          height: '100vh',
+          height: 'calc(100vh - 50px)',
           transform: 'translateY(100%)',
         }}
         transitionStyles={{
@@ -33,8 +33,13 @@ export default class extends React.PureComponent {
           margin={20}
           display="flex"
           flexDirection="column"
-          height="88%"
+          height="95%"
           borderRadius={4}
+          css={{
+            '@media (max-width: 880px)': {
+              padding: 20,
+            },
+          }}
         >
           <SubNav navLinks={['Home', 'Projects', 'About', 'News']} />
 

@@ -55,6 +55,11 @@ export const pageQuery = graphql`
           title
           slug
           created_at
+          metadata {
+            hero {
+              imgix_url
+            }
+          }
         }
       }
     }

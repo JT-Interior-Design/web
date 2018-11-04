@@ -5,7 +5,16 @@ import ContactAddress from './ContactAddress';
 
 export default ({ selected }) => (
   <g.Div padding={20} flex={1}>
-    <g.Div position="relative" overflow="hidden" height="100%">
+    <g.Div
+      position="relative"
+      overflow="hidden"
+      height="100%"
+      css={{
+        '@media (max-width: 880px)': {
+          overflowY: 'scroll',
+        },
+      }}
+    >
       <g.Div
         position="absolute"
         top={0}
@@ -13,6 +22,13 @@ export default ({ selected }) => (
         height="100%"
         transition="all 0.5s ease-in-out"
         transform={`translateY(${selected ? '-100%' : '0'})`}
+        css={{
+          '@media (max-width: 880px)': {
+            transform: 'none',
+            position: 'static',
+            height: 'auto',
+          },
+        }}
       >
         <ContactForm />
       </g.Div>
@@ -23,6 +39,13 @@ export default ({ selected }) => (
         height="100%"
         transition="all 0.5s ease-in-out"
         transform={`translateY(${selected ? '0' : '100%'})`}
+        css={{
+          '@media (max-width: 880px)': {
+            position: 'static',
+            transform: 'none',
+            height: 'auto',
+          },
+        }}
       >
         <ContactAddress />
       </g.Div>

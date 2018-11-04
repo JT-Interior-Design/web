@@ -27,7 +27,15 @@ export default props => {
   });
 
   return (
-    <g.Div position="relative" maxWidth={400}>
+    <g.Div
+      position="relative"
+      maxWidth={400}
+      css={{
+        '@media (max-width: 880px)': {
+          maxWidth: '100%',
+        },
+      }}
+    >
       <g.Input
         css={{
           width: '100%',

@@ -29,6 +29,11 @@ export default ({ selected, changeSelected }) => (
     padding="20px 10px"
     borderRight="2px solid #dedede"
     position="relative"
+    css={{
+      '@media (max-width: 880px)': {
+        display: 'none',
+      },
+    }}
   >
     <g.Span
       position="absolute"

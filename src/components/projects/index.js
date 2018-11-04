@@ -18,7 +18,7 @@ export default class Projects extends React.PureComponent {
         node: {
           metadata: { category },
         },
-      }) => category
+      }) => category,
     );
 
     categories = Array.from(new Set(categories));
@@ -30,9 +30,38 @@ export default class Projects extends React.PureComponent {
 
     return (
       <g.Div height="100%" display="flex" flexDirection="column">
-        <g.Div display="flex" flex={1}>
-          <g.Div width="20%" borderRight="2px solid #dedebe" padding="30px 0">
-            <g.H1 marginTop={0} padding={20}>
+        <g.Div
+          display="flex"
+          flex={1}
+          css={{
+            '@media (max-width: 640px)': {
+              flexDirection: 'column',
+            },
+          }}
+        >
+          <g.Div
+            width="20%"
+            borderRight="2px solid #dedebe"
+            padding="30px 0"
+            css={{
+              '@media (max-width: 1150px)': {
+                width: '40%',
+              },
+              '@media (max-width: 640px)': {
+                width: '100%',
+              },
+            }}
+          >
+            <g.H1
+              marginTop={0}
+              padding={20}
+              css={{
+                '@media (max-width: 640px)': {
+                  marginBottom: 0,
+                  fontSize: 28,
+                },
+              }}
+            >
               Projects
             </g.H1>
             <g.Div
@@ -61,10 +90,19 @@ export default class Projects extends React.PureComponent {
             flex={1}
             overflowY="scroll"
             display="grid"
-            gridTemplateColumns="repeat(auto-fill, calc(33.3% - 1px))"
-            gridGap={1}
+            gridTemplateColumns="repeat(3, 1fr)"
+            gridGap={2}
             padding={1}
             gridAutoRows={250}
+            css={{
+              '@media (max-width: 1150px)': {
+                gridTemplateColumns: 'repeat(2, 1fr)',
+              },
+              '@media (max-width: 880px)': {
+                gridTemplateColumns: '1fr',
+                gridAutoRows: 200,
+              },
+            }}
           >
             {data.allCosmicjsProjects.edges.map(
               ({
@@ -94,7 +132,7 @@ export default class Projects extends React.PureComponent {
                       </div>
                     </Link>
                   </div>
-                )
+                ),
             )}
           </g.Div>
         </g.Div>

@@ -13,8 +13,18 @@
   position: relative;
 }
 
+.Container__about {
+  height: 90%;
+}
+
 .Carousel-Container {
   flex-grow: 1;
+}
+
+@media (max-width: 800px) {
+  .Carousel-Container {
+    display: none;
+  }
 }
 
 .About__Img__Container {
@@ -27,6 +37,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(0% 0, 100% 0, 78% 100%, 0 100%);
+}
+
+@media (max-width: 1200px) {
+  .About__Img__Container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .About__Img__Container {
+    width: 40%;
+  }
 }
 
 .About__Logo__Container {
@@ -60,6 +82,13 @@
   width: 50%;
   height: 100%;
   padding: 1rem 3rem;
+}
+
+@media (max-width: 1040px) {
+  .About__Content {
+    padding: 1rem;
+    width: 60%;
+  }
 }
 
 .Name {
@@ -99,4 +128,24 @@
 .Text--Size {
   width: 75%;
   left: 25%;
+}
+
+
+@media (max-width: 880px) {
+  .Container__about {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .About__Img__Container {
+    clip-path: polygon(0% 0, 100% 0, 100% 88%, 0 100%);;
+    width: 100%;
+    height:  600px;
+    flex-shrink: 0;
+  }
+
+  .About__Content {
+    padding: 1rem 3rem;
+    width: 100%;
+  }
 }

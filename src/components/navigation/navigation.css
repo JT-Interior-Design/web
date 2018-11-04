@@ -6,6 +6,12 @@
   padding: 30px;
 }
 
+@media (max-width: 800px) {
+  .Nav__Container {
+    flex-grow: 1;
+  }
+}
+
 .Header {
   display: flex;
   flex-direction: row;
@@ -126,4 +132,24 @@
   position: absolute;
   top: 15px;
   left: 33px;
+}
+
+@media (max-width: 640px) {
+  .Nav a {
+    font-size: 14px;
+  }
+
+  .Nav {
+    top: 50px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    opacity: 0.8;
+    transition: all .3s;
+    z-index: 30;
+  }
+
+
 }

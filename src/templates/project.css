@@ -15,7 +15,7 @@
 }
 
 .Project__Jumbo {
-  height: 650px;
+  height: auto;
   width: 100%;
   display: block;
   margin: 0 auto;

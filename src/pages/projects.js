@@ -17,7 +17,7 @@ export default ({ data }) => {
     <PageTransition
       defaultStyle={{
         transition: `${TRANSITION_TIME}ms`,
-        height: '100vh',
+        height: 'calc(100vh - 50px)',
         transform: 'translateY(-100%)',
       }}
       transitionStyles={{
@@ -32,7 +32,7 @@ export default ({ data }) => {
         margin={20}
         display="flex"
         flexDirection="column"
-        height="88%"
+        height="95%"
         borderRadius={4}
       >
         <SubNav navLinks={['Home', 'Contact', 'About', 'News']} />

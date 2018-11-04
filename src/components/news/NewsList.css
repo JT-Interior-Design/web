@@ -1,6 +1,6 @@
 .NewsList {
-  overflow-x: hidden;
   overflow-y: scroll;
+  min-height: 100%;
 }
 
 .NewsList h1 {
@@ -14,8 +14,9 @@
 }
 .NewsList__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, 600px);
   grid-gap: 20px;
+  justify-content: space-around
 }
 .NewsList__item {
   border: 1px solid #eeeeee;

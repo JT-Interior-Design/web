@@ -5,9 +5,9 @@ import moment from 'moment';
 import './NewsList.css';
 
 export default ({ list }) => {
-  for (let i = 0; i < 6; i++) {
-    list = list.concat(list);
-  }
+  // for (let i = 0; i < 6; i++) {
+  //   list = list.concat(list);
+  // }
 
   return (
     <div className="NewsList">

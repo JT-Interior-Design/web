@@ -13,6 +13,9 @@ export default ({ data }) => {
   window.onmousewheel = document.onmousewheel = null; // older browsers, IE
   window.ontouchmove = null; // mobile
   document.onkeydown = null;
+
+  console.log(data);
+
   return (
     <PageTransition
       defaultStyle={{
@@ -38,18 +41,22 @@ export default ({ data }) => {
         borderRadius={4}
       >
         <SubNav navLinks={['Home', 'Contact', 'About', 'Projects']} />
-        <NewsList
-          list={[
-            {
-              title: 'New in Architectural Design',
-              slug: 'new-in-architectural-design',
-              content:
-                '<h2>Hello World</h2><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At eos, minima quidem pariatur consequatur natus temporibus laudantium quas, aspernatur nobis nisi voluptatem ipsam debitis odio. Cupiditate, culpa harum. Quo, nisi!</p>',
-              created_at: new Date().toISOString(),
-            },
-          ]}
-        />
+        <NewsList list={data.allCosmicjsNews.edges.map(({ node }) => node)} />
       </g.Div>
     </PageTransition>
   );
 };
+
+export const pageQuery = graphql`
+  query ALL_NEWS {
+    allCosmicjsNews {
+      edges {
+        node {
+          title
+          slug
+          created_at
+        }
+      }
+    }
+  }
+`;

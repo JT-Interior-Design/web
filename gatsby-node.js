@@ -16,6 +16,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
               }
             }
+            allCosmicjsNews {
+              edges {
+                node {
+                  id
+                  slug
+                }
+              }
+            }
           }
         `,
       ).then(result => {
@@ -26,6 +34,19 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         const postTemplate = path.resolve(
           `${__dirname}/src/templates/project-template.js`,
         );
+        const blogTemplate = path.resolve(
+          `${__dirname}/src/templates/blog-template.js`,
+        );
+
+        result.data.allCosmicjsNews.edges.forEach(edge => {
+          createPage({
+            path: `/news/${edge.node.slug}/`,
+            component: blogTemplate,
+            context: {
+              id: edge.node.id,
+            },
+          });
+        });
 
         result.data.allCosmicjsProjects.edges.forEach(edge => {
           createPage({

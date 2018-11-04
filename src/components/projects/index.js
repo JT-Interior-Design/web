@@ -18,15 +18,10 @@ export default class Projects extends React.PureComponent {
         node: {
           metadata: { category },
         },
-      }) => category,
+      }) => category
     );
 
     categories = Array.from(new Set(categories));
-
-    // data.allCosmicjsProjects.edges = data.allCosmicjsProjects.edges.reduce(
-    //   (acc, element) => [...acc, element, element, element, element],
-    //   []
-    // );
 
     return (
       <g.Div height="100%" display="flex" flexDirection="column">
@@ -132,7 +127,7 @@ export default class Projects extends React.PureComponent {
                       </div>
                     </Link>
                   </div>
-                ),
+                )
             )}
           </g.Div>
         </g.Div>

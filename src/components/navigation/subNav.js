@@ -10,7 +10,7 @@ const SubNav = ({ navLinks }) => (
           className="NavLink NavLink--Nav"
           key={index}
         >
-          {link}
+          {link === 'News' ? 'Blog' : link}
         </Link>
       );
     })}

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "bricks.js": "^1.8.0",
+    "cosmicjs": "^3.2.14",
     "gatsby": "^1.9.277",
     "gatsby-image": "^2.0.16",
     "gatsby-link": "^1.6.46",

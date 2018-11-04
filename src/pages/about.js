@@ -5,7 +5,6 @@ import Logo from '../components/shared/icons/Logo';
 import JTHeader from '../components/navigation/JTHeader';
 import SubNav from '../components/navigation/subNav';
 import { preventDefault } from '../components/Carousel';
-import { TRANSITION_TIME } from '../GLOBALS';
 
 export default () => {
   window.removeEventListener('DOMMouseScroll', preventDefault, false);
@@ -16,7 +15,7 @@ export default () => {
   return (
     <PageTransition
       defaultStyle={{
-        transition: `${TRANSITION_TIME}ms`,
+        transition: '750ms',
         height: 'calc(100vh - 50px)',
         transform: 'translateX(100%)',
       }}
@@ -24,7 +23,7 @@ export default () => {
         entering: { transform: 'translateX(100%)' },
         entered: { transform: 'none' },
       }}
-      transitionTime={TRANSITION_TIME}
+      transitionTime={750}
     >
       <div className="Container Container__about">
         <SubNav navLinks={['Home', 'Contact', 'Projects', 'News']} />

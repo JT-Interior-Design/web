@@ -5,7 +5,6 @@ import { navigateTo } from 'gatsby-link';
 import Navigation from '../components/navigation/Navigation';
 import Carousel from '../components/Carousel';
 import Loading from '../components/loading/Loading';
-import { TRANSITION_TIME } from '../GLOBALS';
 
 import './index.css';
 
@@ -71,7 +70,7 @@ export default class extends React.Component {
 
   render() {
     const images = this.props.data.cosmicjsCarousels.metadata.images.map(
-      ({ image: { imgix_url } }) => imgix_url,
+      ({ image: { imgix_url } }) => imgix_url
     );
     console.log(images);
     let loading = false;
@@ -83,11 +82,11 @@ export default class extends React.Component {
       <PageTransition
         defaultStyle={{
           height: '100vh',
-          transition: `${TRANSITION_TIME}ms`,
+          transition: '750ms',
           ...this.state.defaultStyles,
         }}
         transitionStyles={this.state.transitionStyles}
-        transitionTime={TRANSITION_TIME}
+        transitionTime={750}
       >
         <div className="Container">
           {loading ? <Loading className="Loading" /> : null}

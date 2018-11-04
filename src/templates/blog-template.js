@@ -1,5 +1,4 @@
 import React from 'react';
-import g from 'glamorous';
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 import SubNav from '../components/navigation/subNav';

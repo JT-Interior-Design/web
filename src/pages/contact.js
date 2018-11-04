@@ -5,7 +5,6 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 import ContactSidebar from '../components/contact/ContactSidebar';
 import ContactMain from '../components/contact/ContactMain';
 import SubNav from '../components/navigation/subNav';
-import TRANSITION_TIME from '../GLOBALS';
 
 export default class extends React.PureComponent {
   state = { selected: 0 };

@@ -28,7 +28,6 @@
 }
 
 .About__Img__Container {
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 70%;
@@ -69,6 +68,7 @@
 
 .About__Logo {
   background-image: none;
+  width: 300px;
 }
 
 .About__Logo--Size {
@@ -130,7 +130,6 @@
   left: 25%;
 }
 
-
 @media (max-width: 880px) {
   .Container__about {
     flex-direction: column;
@@ -138,9 +137,9 @@
   }
 
   .About__Img__Container {
-    clip-path: polygon(0% 0, 100% 0, 100% 88%, 0 100%);;
+    clip-path: polygon(0% 0, 100% 0, 100% 88%, 0 100%);
     width: 100%;
-    height:  600px;
+    height: 600px;
     flex-shrink: 0;
   }
 

@@ -1,10 +1,16 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
 import SvgButton from '../components/shared/SvgButton';
 
 import './index.css';
 
 export default ({ children }) => (
   <div className="Background__Wrapper">
+    <Helmet>
+      <link rel="shortcut icon" href="/favicon_3.png" type="image/x-icon" />
+      <title>JT Interiors</title>
+    </Helmet>
     <header className="Social__Wrapper">
       <SvgButton
         className="Social__Button"

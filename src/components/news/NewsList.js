@@ -5,10 +5,6 @@ import moment from 'moment';
 import './NewsList.css';
 
 export default ({ list }) => {
-  // for (let i = 0; i < 6; i++) {
-  //   list = list.concat(list);
-  // }
-
   return (
     <div className="NewsList">
       <h1>News</h1>
@@ -24,7 +20,7 @@ export default ({ list }) => {
                 hero: { imgix_url },
               },
             },
-            i,
+            i
           ) => (
             <li key={i} className="NewsList__item">
               <img className="NewsList__item-img" src={imgix_url} />
@@ -40,7 +36,7 @@ export default ({ list }) => {
                 </div>
               </div>
             </li>
-          ),
+          )
         )}
       </ul>
     </div>

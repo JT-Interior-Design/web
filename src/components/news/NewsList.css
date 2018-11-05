@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 @media (max-width: 1200px) {
@@ -54,6 +54,12 @@
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .NewsList__item-title {
+    font-size: 1rem;
+  }
 }
 
 .NewsList__item-title span {
@@ -99,16 +105,4 @@
 .NewsList__link span:hover::after {
   transform: translateY(0);
   opacity: 1;
-}
-
-@media (max-width: 1440px) {
-  .NewsList__item:nth-child(2n) {
-    transform-origin: right;
-  }
-}
-
-@media (min-width: 1680px) {
-  .NewsList__item:nth-child(3n) {
-    transform-origin: right;
-  }
 }

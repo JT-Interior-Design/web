@@ -11,9 +11,11 @@ export default () => (
     >
       Jason Taylor
     </g.H2>
-    <g.P marginBottom={10}>jasontaylor@email.com</g.P>
-    <g.P>123-456-7890</g.P>
+    <g.P marginBottom={10}>jtaylor@jasontaylorinteriors.com</g.P>
+    <g.P>(917)882-0799</g.P>
     <g.H3>Office</g.H3>
-    <g.Address>No. 123, ABC Street, City</g.Address>
+    <g.Address>
+      929 Landings Drive <br /> Chattanooga TN, 37402
+    </g.Address>
   </g.Div>
 );

@@ -45,17 +45,15 @@ export default class ContactForm extends React.Component {
       content: this.state.message,
       type_slug: 'contact-submissions',
       metafields: Object.keys(this.state)
-        .filter(key => key !== 'message')
-        .map(key => ({
-          key,
-          type: 'text',
-          value: this.state[key],
-        })),
+      .map(key => ({
+        key,
+        type: 'text',
+        value: this.state[key],
+      })),
       options: {
         slug_field: false,
       },
     };
-    // console.log(params);
     const Cosmic = createCosmic();
     const bucket = Cosmic.bucket({
       slug: 'jt-interior-design',

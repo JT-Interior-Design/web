@@ -54,7 +54,6 @@ class Carousel extends React.Component {
   }
 
   wheelListener = e => {
-    console.log(e);
     _.throttle(
       () => {
         e.deltaY > 0 ? this.next() : this.previous();

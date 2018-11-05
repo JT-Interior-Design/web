@@ -7,11 +7,6 @@ import SubNav from '../components/navigation/subNav';
 import { preventDefault } from '../components/Carousel';
 
 export default () => {
-  window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = null; // modern standard
-  window.onmousewheel = document.onmousewheel = null; // older browsers, IE
-  window.ontouchmove = null; // mobile
-  document.onkeydown = null;
   return (
     <PageTransition
       defaultStyle={{

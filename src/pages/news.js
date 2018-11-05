@@ -7,14 +7,6 @@ import { preventDefault } from '../components/Carousel';
 import NewsList from '../components/news/NewsList';
 
 export default ({ data }) => {
-  window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = null; // modern standard
-  window.onmousewheel = document.onmousewheel = null; // older browsers, IE
-  window.ontouchmove = null; // mobile
-  document.onkeydown = null;
-
-  console.log(data);
-
   return (
     <PageTransition
       defaultStyle={{

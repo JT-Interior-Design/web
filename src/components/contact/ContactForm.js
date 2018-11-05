@@ -44,8 +44,7 @@ export default class ContactForm extends React.Component {
       title: this.state.name,
       content: this.state.message,
       type_slug: 'contact-submissions',
-      metafields: Object.keys(this.state)
-      .map(key => ({
+      metafields: Object.keys(this.state).map(key => ({
         key,
         type: 'text',
         value: this.state[key],
@@ -62,7 +61,6 @@ export default class ContactForm extends React.Component {
     bucket
       .addObject(params)
       .then(data => {
-        console.log(data);
         this.setState(initState);
       })
       .catch(error => {

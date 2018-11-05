@@ -21,6 +21,7 @@ export default class extends React.Component {
         opacity: 1,
       },
     },
+    loading: false,
   };
 
   handleNavClick = to => {
@@ -68,16 +69,18 @@ export default class extends React.Component {
     this.setState({ defaultStyles, transitionStyles }, () => navigateTo(to));
   };
 
+  componentDidMount() {
+    if (!sessionStorage.getItem('loading')) {
+      this.state.loading = true;
+      sessionStorage.setItem('loading', 'loading');
+    }
+  }
+
   render() {
     const images = this.props.data.cosmicjsCarousels.metadata.images.map(
       ({ image: { imgix_url } }) => imgix_url
     );
-    console.log(images);
-    let loading = false;
-    if (!sessionStorage.getItem('loading')) {
-      loading = true;
-      sessionStorage.setItem('loading', 'loading');
-    }
+
     return (
       <PageTransition
         defaultStyle={{
@@ -89,7 +92,7 @@ export default class extends React.Component {
         transitionTime={750}
       >
         <div className="Container">
-          {loading ? <Loading className="Loading" /> : null}
+          {this.state.loading ? <Loading className="Loading" /> : null}
           <Navigation onNavClick={this.handleNavClick} />
           <div className="Carousel-Container">
             <Carousel images={images} />

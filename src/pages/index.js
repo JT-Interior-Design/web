@@ -92,7 +92,7 @@ export default class extends React.Component {
         transitionTime={750}
       >
         <div className="Container">
-          {this.state.loading ? <Loading className="Loading" /> : null}
+          {!this.state.loading ? <Loading className="Loading" /> : null}
           <Navigation onNavClick={this.handleNavClick} />
           <div className="Carousel-Container">
             <Carousel images={images} />

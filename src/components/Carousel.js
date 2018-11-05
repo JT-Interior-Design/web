@@ -41,7 +41,6 @@ class Carousel extends React.Component {
 
   componentDidMount() {
     disableScroll();
-
     window.addEventListener('wheel', this.wheelListener);
   }
 
@@ -55,13 +54,13 @@ class Carousel extends React.Component {
   }
 
   wheelListener = e => {
-    // console.log(e);
+    console.log(e);
     _.throttle(
       () => {
         e.deltaY > 0 ? this.next() : this.previous();
       },
       1600,
-      { trailing: false },
+      { trailing: false }
     )();
   };
 
@@ -76,7 +75,7 @@ class Carousel extends React.Component {
       () => {
         TweenMax.fromTo(
           this.incomingImgRef,
-          0.8,
+          1.4,
           { yPercent: 100 },
           {
             yPercent: 0,
@@ -86,9 +85,9 @@ class Carousel extends React.Component {
                 currentImage: incoming,
                 animating: false,
               }),
-          },
+          }
         );
-      },
+      }
     );
   };
 
@@ -106,7 +105,7 @@ class Carousel extends React.Component {
       () => {
         TweenMax.fromTo(
           this.incomingImgRef,
-          0.8,
+          1.4,
           { yPercent: -100 },
           {
             yPercent: 0,
@@ -116,9 +115,9 @@ class Carousel extends React.Component {
                 currentImage: incoming,
                 animating: false,
               }),
-          },
+          }
         );
-      },
+      }
     );
   };
 

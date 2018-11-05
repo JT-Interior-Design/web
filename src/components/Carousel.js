@@ -42,17 +42,28 @@ class Carousel extends React.Component {
   componentDidMount() {
     disableScroll();
 
-    window.addEventListener(
-      'wheel',
-      _.throttle(
-        e => {
-          e.deltaY > 0 ? this.next() : this.previous();
-        },
-        1600,
-        { trailing: false }
-      )
-    );
+    window.addEventListener('wheel', this.wheelListener);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('wheel', this.wheelListener);
+    window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onwheel = null; // modern standard
+    window.onmousewheel = document.onmousewheel = null; // older browsers, IE
+    window.ontouchmove = null; // mobile
+    document.onkeydown = null;
+  }
+
+  wheelListener = e => {
+    // console.log(e);
+    _.throttle(
+      () => {
+        e.deltaY > 0 ? this.next() : this.previous();
+      },
+      1600,
+      { trailing: false },
+    )();
+  };
 
   next = () => {
     if (this.state.animating) return;
@@ -75,9 +86,9 @@ class Carousel extends React.Component {
                 currentImage: incoming,
                 animating: false,
               }),
-          }
+          },
         );
-      }
+      },
     );
   };
 
@@ -105,9 +116,9 @@ class Carousel extends React.Component {
                 currentImage: incoming,
                 animating: false,
               }),
-          }
+          },
         );
-      }
+      },
     );
   };
 

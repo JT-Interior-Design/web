@@ -1,8 +1,8 @@
 .Project__container {
   flex-grow: 1;
   width: 97.5%;
-  height: 88vh;
-  margin: 20px auto;
+  height: calc(100vh - 80px);
+  margin: 20px auto 0;
   background-color: rgba(255, 255, 255, 0.8);
   overflow-y: scroll;
   padding: 80px;
@@ -32,10 +32,34 @@
 
 .Project__Img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  margin: 0;
+  object-fit: cover;
 }
 
 .Project__brick {
   margin: 0 auto;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+
+.Project__brick div.landscape {
+  /* width: calc(100%/3) */
+  grid-column-end: span 2;
+}
+
+
+@media (max-width: 1165px) {
+  .Project__brick {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .Project__brick {
+    grid-template-columns: 1fr;
+  }
 }

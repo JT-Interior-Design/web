@@ -11,7 +11,7 @@ export default () => {
     <PageTransition
       defaultStyle={{
         transition: '750ms',
-        height: 'calc(100vh - 50px)',
+        minHeight: 'calc(100vh - 50px)',
         transform: 'translateX(100%)',
       }}
       transitionStyles={{

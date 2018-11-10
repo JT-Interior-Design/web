@@ -5,7 +5,6 @@ import SubNav from '../components/navigation/subNav';
 import './project.css';
 
 export default ({ data }) => {
-  console.log(data);
   const {
     cosmicjsNews: {
       content,

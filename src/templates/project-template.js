@@ -20,20 +20,6 @@ export default class Project extends React.Component {
 
   componentDidMount() {
     this.setLandscape();
-    // this.instance = Bricks({
-    //   container: '.Project__brick',
-    //   sizes: [
-    //     { columns: 1, gutter: 3 },
-    //     { mq: '900px', columns: 2, gutter: 3 },
-    //     { mq: '1200px', columns: 3, gutter: 3 },
-    //   ],
-    //   packed: 'data-packed',
-    // });
-    // this.instance.resize(true).pack();
-  }
-
-  componentDidUpdate() {
-    // this.instance && this.instance.resize(true).pack();
   }
 
   handleImageLoad = i => {

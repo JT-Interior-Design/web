@@ -160,7 +160,6 @@
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.3s;
     z-index: 30;
   }
 

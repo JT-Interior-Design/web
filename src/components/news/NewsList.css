@@ -25,6 +25,8 @@
   }
 }
 
+
+
 .NewsList__item {
   border: 1px solid #eeeeee;
   margin-bottom: 20px;
@@ -43,6 +45,8 @@
   transform: translateY(-3px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .NewsList__item-img {
   margin-bottom: 0;
@@ -105,4 +109,15 @@
 .NewsList__link span:hover::after {
   transform: translateY(0);
   opacity: 1;
+}
+
+
+@media (max-width: 640px) {
+  .NewsList__item {
+    grid-template-columns: 1fr;
+  }
+
+  .NewsList__item-img {
+    height: auto;
+  }
 }

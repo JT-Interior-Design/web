@@ -30,6 +30,12 @@ export default ({ data }) => {
         flexDirection="column"
         height="calc(100% - 40px)"
         borderRadius={4}
+        width="100%"
+        css={{
+          '@media (max-width: 640px)': {
+            padding: '50px 20px',
+          },
+        }}
       >
         <SubNav navLinks={['Home', 'Contact', 'About', 'Projects']} />
         <NewsList list={data.allCosmicjsNews.edges.map(({ node }) => node)} />

@@ -306,7 +306,6 @@ const LoadingSvg = props => (
               className="Logo__Antlers__Body Svg__Animate Fill_Brown"
               x="607.1"
               y="360.7"
-              class="st0"
               width="14.8"
               height="14.8"
             />

@@ -131,6 +131,11 @@
 }
 
 @media (max-width: 880px) {
+  .Container {
+    height: auto;
+    min-height: 88%;
+  }
+
   .Container__about {
     flex-direction: column;
     overflow-y: scroll;

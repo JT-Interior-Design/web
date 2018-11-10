@@ -4,7 +4,16 @@ import ContactForm from './ContactForm';
 import ContactAddress from './ContactAddress';
 
 export default ({ selected }) => (
-  <g.Div padding={20} flex={1}>
+  <g.Div
+    padding={20}
+    flex={1}
+    css={{
+      '@media (max-width: 880px)': {
+        width: '100%',
+        padding: 0,
+      },
+    }}
+  >
     <g.Div
       position="relative"
       overflow="hidden"

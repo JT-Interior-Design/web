@@ -8,6 +8,14 @@ export default () => (
       marginTop={0}
       textTransform="uppercase"
       letterSpacing={3}
+      css={{
+        '@media (max-width: 880px)': {
+          fontSize: 24,
+        },
+        '& ~ p': {
+          fontSize: 15,
+        },
+      }}
     >
       Jason Taylor
     </g.H2>

@@ -62,4 +62,9 @@
   .Project__brick {
     grid-template-columns: 1fr;
   }
+
+  .Project__container {
+    padding: 20px;
+    padding-top: 50px;
+  }
 }

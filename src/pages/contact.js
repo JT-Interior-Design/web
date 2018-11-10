@@ -37,6 +37,9 @@ export default class extends React.PureComponent {
           css={{
             '@media (max-width: 880px)': {
               padding: 20,
+              paddingTop: 50,
+              marginRight: 0,
+              marginLeft: 0,
             },
           }}
         >

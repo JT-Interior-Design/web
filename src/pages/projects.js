@@ -28,6 +28,12 @@ export default ({ data }) => {
         flexDirection="column"
         height="95%"
         borderRadius={4}
+        css={{
+          '@media (max-width: 880px)': {
+            height: 'auto',
+            minHeight: '95%',
+          },
+        }}
       >
         <SubNav navLinks={['Home', 'Contact', 'About', 'News']} />
         <Projects data={data} />

@@ -18,7 +18,7 @@ export default class Projects extends React.PureComponent {
         node: {
           metadata: { category },
         },
-      }) => category
+      }) => category,
     );
 
     categories = Array.from(new Set(categories));
@@ -96,6 +96,7 @@ export default class Projects extends React.PureComponent {
               '@media (max-width: 880px)': {
                 gridTemplateColumns: '1fr',
                 gridAutoRows: 200,
+                overflowY: 'hidden',
               },
             }}
           >
@@ -127,7 +128,7 @@ export default class Projects extends React.PureComponent {
                       </div>
                     </Link>
                   </div>
-                )
+                ),
             )}
           </g.Div>
         </g.Div>

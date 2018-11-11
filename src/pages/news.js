@@ -32,6 +32,10 @@ export default ({ data }) => {
         borderRadius={4}
         width="100%"
         css={{
+          '@media(max-width: 880px)': {
+            height: 'auto',
+            minHeight: '95%',
+          },
           '@media (max-width: 640px)': {
             padding: '50px 20px',
           },

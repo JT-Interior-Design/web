@@ -40,6 +40,8 @@ export default class extends React.PureComponent {
               paddingTop: 50,
               marginRight: 0,
               marginLeft: 0,
+              height: 'auto',
+              minHeight: '95%',
             },
           }}
         >

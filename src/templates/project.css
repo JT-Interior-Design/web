@@ -23,13 +23,6 @@
   object-fit: cover;
 }
 
-/* .Project__Img__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column: span 1;
-  grid-gap: 3px;
-} */
-
 .Project__Img {
   width: 100%;
   height: 100%;
@@ -47,14 +40,19 @@
 }
 
 .Project__brick div.landscape {
-  /* width: calc(100%/3) */
   grid-column-end: span 2;
 }
-
 
 @media (max-width: 1165px) {
   .Project__brick {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 880px) {
+  .Project__container {
+    height: auto;
+    min-height: 95%;
   }
 }
 

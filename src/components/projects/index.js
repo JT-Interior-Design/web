@@ -18,7 +18,7 @@ export default class Projects extends React.PureComponent {
         node: {
           metadata: { category },
         },
-      }) => category,
+      }) => category
     );
 
     categories = Array.from(new Set(categories));
@@ -38,6 +38,7 @@ export default class Projects extends React.PureComponent {
             width="20%"
             borderRight="2px solid #dedebe"
             padding="30px 0"
+            overflow="scroll"
             css={{
               '@media (max-width: 1150px)': {
                 width: '40%',
@@ -128,7 +129,7 @@ export default class Projects extends React.PureComponent {
                       </div>
                     </Link>
                   </div>
-                ),
+                )
             )}
           </g.Div>
         </g.Div>
@@ -136,3 +137,5 @@ export default class Projects extends React.PureComponent {
     );
   }
 }
+
+// c

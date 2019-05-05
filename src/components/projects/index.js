@@ -35,6 +35,7 @@ export default class Projects extends React.PureComponent {
           }}
         >
           <g.Div
+            height="100%"
             width="20%"
             borderRight="2px solid #dedebe"
             padding="30px 0"

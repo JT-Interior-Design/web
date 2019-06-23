@@ -38,41 +38,56 @@ export default class ContactForm extends React.Component {
   handleChange = ({ target: { name, value } }) =>
     this.setState({ [name]: value });
 
-  handleSubmit = event => {
-    event.preventDefault();
-    const params = {
-      title: this.state.name,
-      content: this.state.message,
-      type_slug: 'contact-submissions',
-      metafields: Object.keys(this.state).map(key => ({
-        key,
-        type: 'text',
-        value: this.state[key],
-      })),
-      options: {
-        slug_field: false,
-      },
-    };
-    const Cosmic = createCosmic();
-    const bucket = Cosmic.bucket({
-      slug: 'jt-interior-design',
-    });
+  // handleSubmit = event => {
+  //   event.preventDefault();
+  //   const params = {
+  //     title: this.state.name,
+  //     content: this.state.message,
+  //     type_slug: 'contact-submissions',
+  //     metafields: Object.keys(this.state).map(key => ({
+  //       key,
+  //       type: 'text',
+  //       value: this.state[key],
+  //     })),
+  //     options: {
+  //       slug_field: false,
+  //     },
+  //   };
+  //   const Cosmic = createCosmic();
+  //   const bucket = Cosmic.bucket({
+  //     slug: 'jt-interior-design',
+  //   });
 
-    bucket
-      .addObject(params)
-      .then(data => {
-        this.setState(initState);
-      })
-      .catch(error => {
-        console.log(error);
-        this.setState(initState);
-      });
+  //   bucket
+  //     .addObject(params)
+  //     .then(data => {
+  //       this.setState(initState);
+  //     })
+  //     .catch(error => {
+  //       console.log(error);
+  //       this.setState(initState);
+  //     });
+  // };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => console.log('sent'))
+      .catch(error => alert(error));
   };
 
   render() {
     return (
       <form
-        // onSubmit={this.handleSubmit}
+        onSubmit={this.handleSubmit}
         method="post"
         netlify-honeypot="bot-field"
         data-netlify="true"

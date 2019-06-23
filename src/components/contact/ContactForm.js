@@ -71,7 +71,12 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form
+        onSubmit={this.handleSubmit}
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
         <g.Div display="flex" flexWrap="wrap" padding={20}>
           <InputGroup>
             <Label htmlFor="name">Name:</Label>

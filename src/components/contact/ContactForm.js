@@ -78,6 +78,7 @@ export default class ContactForm extends React.Component {
         data-netlify="true"
         name="Contact"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <g.Div display="flex" flexWrap="wrap" padding={20}>
           <InputGroup>
             <Label htmlFor="name">Name:</Label>

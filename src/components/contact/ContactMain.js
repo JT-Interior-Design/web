@@ -3,7 +3,7 @@ import g from 'glamorous';
 import ContactForm from './ContactForm';
 import ContactAddress from './ContactAddress';
 
-export default ({ selected }) => (
+export default ({ selected, displayModal }) => (
   <g.Div
     padding={20}
     flex={1}
@@ -39,7 +39,7 @@ export default ({ selected }) => (
           },
         }}
       >
-        <ContactForm />
+        <ContactForm displayModal={displayModal} />
       </g.Div>
       <g.Div
         position="absolute"

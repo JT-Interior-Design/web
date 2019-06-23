@@ -88,6 +88,7 @@ export default class ContactForm extends React.Component {
       }),
     })
       .then(() => this.props.displayModal())
+      .then(() => this.setState(initState))
       .catch(error => alert(error));
   };
 

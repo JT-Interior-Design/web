@@ -69,13 +69,19 @@ export default class ContactForm extends React.Component {
   //     });
   // };
 
+  encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
+
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
+      body: this.encode({
         'form-name': form.getAttribute('name'),
         ...this.state,
       }),

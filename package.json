@@ -26,7 +26,7 @@
     "gatsby-transformer-sharp": "^2.1.4",
     "glamor": "^2.20.40",
     "glamorous": "^4.13.1",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "react-helmet": "^5.2.0",
